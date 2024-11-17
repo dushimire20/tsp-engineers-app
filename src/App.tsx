@@ -3,7 +3,7 @@ import Home from '@/pages/home';
 import Layout from '@/components/Layout';
 import AboutUs from '@/pages/about';
 import ContactUs from '@/pages/contact';
-import Products from '@/pages/products';
+import Products from '@/pages/product';
 import Services from '@/pages/ourServices';
 
 

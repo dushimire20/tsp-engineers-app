@@ -15,7 +15,8 @@ export default {
 
       fontFamily: {
         inter: ["Inter", "Satoshi Variable"],
-        montserrat: ["Montserrat", "sans-serif"]
+        montserrat: ["Montserrat", "sans-serif"],
+        geist: ["geist"]
       },
 
       screens: {
