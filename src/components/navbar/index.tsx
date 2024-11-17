@@ -5,127 +5,127 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import Logo from "@/assets/Logo-1.png";
 
 const Navbar = () => {
-  const flexBetween = "flex items-center justify-between font-inter ";
+  const flexBetween = "flex items-center justify-between font-inter";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 0);
     };
-
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleNavLinkClick = () => {
-    setIsMenuToggled(false);
-  };
-
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
-    `border-b-2   ${
-      isActive ? "border-secondary-100" : "border-transparent"
-    } hover:border-secondary-100`;
+    `px-4 py-2 rounded-full  ${
+      isActive
+        ? "bg-gray-100 text-black font-medium border border-sky-500"
+        : "text-gray-600 hover:bg-gray-100 hover:text-black hover:border hover:border-sky-500 "
+    } transition-all duration-300`;
 
   return (
     <nav>
       <div
         className={`${flexBetween} fixed top-0 z-30 w-full py-[20px] ${
           isScrolled
-            ? "bg-secondary-100 bg-opacity-90"
-            : window.location.pathname === "/"
-            ? "bg-transparent"
-            : "bg-secondary-100"
-        }`}
+            ? "bg-white shadow-lg"
+            : "bg-white"
+        } transition-all duration-300`}
       >
-        <div className={`${flexBetween} mx-auto w-5/6`}>
-          <div className={`${flexBetween} w-full gap-8`}>
-            {/* Left Side */}
-            <NavLink to="/">
-              <img className="" src={Logo} />
-            </NavLink>
-
-            {/* Right Side */}
-            {isAboveMediumScreens ? (
-              <div className={`${flexBetween} w-3/5`}>
-                <div className={`${flexBetween} gap-8 text-sm text-center`}>
-                  <NavLink to="/" className={navLinkClass}>
-                    Home
-                  </NavLink>
-                  <NavLink to="/service" className={navLinkClass}>
-                    Service
-                  </NavLink>
-                  <NavLink to="/product" className={navLinkClass}>
-                    Product
-                  </NavLink>
-                  <NavLink to="/about" className={navLinkClass}>
-                    About Us
-                  </NavLink>
-                  <NavLink to="/contact" className={navLinkClass}>
-                    Contact
-                  </NavLink>
-                </div>
-                <div className={`${flexBetween} gap-8`}>
-                  <NavLink
-                    to="/signIn"
-                    className="hover:text-secondary-100"
-                    onClick={handleNavLinkClick}
-                  >
-                    Sign In
-                  </NavLink>
-
-                  <NavLink
-                    to="/getstarted"
-                    className="bg-secondary-100 text-secondary-200 px-4 py-2 rounded-full hover:bg-secondary-200 hover:text-secondary-100 transition-all"
-                    onClick={handleNavLinkClick}
-                  >
-                    Get Started
-                  </NavLink>
-                </div>
-              </div>
-            ) : (
-              <button
-                className="rounded-full bg-secondary-100 p-2"
-                onClick={() => setIsMenuToggled(!isMenuToggled)}
-              >
-                <Bars3Icon className="h-6 w-6 text-primary-100" />
-              </button>
-            )}
+        <div className="mx-auto w-5/6 flex items-center justify-between">
+          {/* Left Section */}
+          <div className="flex items-center gap-4 ">
+            <img src={Logo} alt="Logo" className="h-6 w-auto" />
+            <span className="font-semibold text-black">TSP Engineer Ltd</span>
           </div>
+
+          {/* Right Section */}
+          {isAboveMediumScreens ? (
+            <div className="flex items-center gap-8">
+              {/* Navigation Links */}
+              <div className="flex items-center gap-4">
+                <NavLink to="/" className={navLinkClass}>
+                  Home
+                </NavLink>
+                <NavLink to="/service" className={navLinkClass}>
+                  Service
+                </NavLink>
+                <NavLink to="/product" className={navLinkClass}>
+                  Product
+                </NavLink>
+                <NavLink to="/about" className={navLinkClass}>
+                  About Us
+                </NavLink>
+                <NavLink to="/contact" className={navLinkClass}>
+                  Contact
+                </NavLink>
+              </div>
+
+              {/* Sign In and Get Started */}
+              <div className="flex items-center gap-4">
+                <NavLink
+                  to="/signIn"
+                  className="text-gray-600 hover:text-black transition-all duration-300"
+                >
+                  Sign In
+                </NavLink>
+                <NavLink
+                  to="/getstarted"
+                  className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-all duration-300 flex items-center gap-2"
+                >
+                  Get Started <span>→</span>
+                </NavLink>
+              </div>
+            </div>
+          ) : (
+            <button
+              className="rounded-full bg-gray-100 p-2"
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+            >
+              <Bars3Icon className="h-6 w-6 text-black" />
+            </button>
+          )}
         </div>
 
         {/* Mobile Menu */}
         {!isAboveMediumScreens && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 z-40 h-full w-[250px] bg-secondary-100 drop-shadow-xl">
-            {/* Close Icon */}
-            <div className="flex justify-end p-12">
-              <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <XMarkIcon className="h-6 w-6 text-primary-100" />
+          <div className="fixed right-0 top-0 z-40 h-full w-[250px] bg-white shadow-xl">
+            <div className="flex justify-end p-4">
+              <button onClick={() => setIsMenuToggled(false)}>
+                <XMarkIcon className="h-6 w-6 text-black" />
               </button>
             </div>
-            {/* Menu Items */}
-            <div className="ml-[33%] flex flex-col gap-8 text-lg font-poppins">
-              <NavLink to="/" className={navLinkClass} onClick={handleNavLinkClick}>
+            <div className="flex flex-col items-center gap-4 text-lg mt-8">
+              <NavLink to="/" className={navLinkClass} onClick={() => setIsMenuToggled(false)}>
                 Home
               </NavLink>
-              <NavLink to="/service" className={navLinkClass} onClick={handleNavLinkClick}>
+              <NavLink to="/service" className={navLinkClass} onClick={() => setIsMenuToggled(false)}>
                 Service
               </NavLink>
-              <NavLink to="/product" className={navLinkClass} onClick={handleNavLinkClick}>
+              <NavLink to="/product" className={navLinkClass} onClick={() => setIsMenuToggled(false)}>
                 Product
               </NavLink>
-              <NavLink to="/about" className={navLinkClass} onClick={handleNavLinkClick}>
+              <NavLink to="/about" className={navLinkClass} onClick={() => setIsMenuToggled(false)}>
                 About Us
               </NavLink>
-              <NavLink to="/contact" className={navLinkClass} onClick={handleNavLinkClick}>
+              <NavLink to="/contact" className={navLinkClass} onClick={() => setIsMenuToggled(false)}>
                 Contact
+              </NavLink>
+              <NavLink
+                to="/signIn"
+                className="text-gray-600 hover:text-black transition-all duration-300"
+                onClick={() => setIsMenuToggled(false)}
+              >
+                Sign In
+              </NavLink>
+              <NavLink
+                to="/getstarted"
+                className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-all duration-300"
+                onClick={() => setIsMenuToggled(false)}
+              >
+                Get Started
               </NavLink>
             </div>
           </div>

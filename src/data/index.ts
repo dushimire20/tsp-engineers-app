@@ -87,7 +87,7 @@ export const teamMembers = [
     {
       title: "General Machinery",
       description:
-        "",
+        "DG-P, DG Diesel Generators,  DG Multi-4, DGW Welding Generators, DGY Generators,  DGC Generators,DGP Generators,Generators Accessories, DLV/DLA Engines,  DLY Diesel Engines,  Kohler KD Diesel Engines ...",
       image: Machinery,
     },
     {
