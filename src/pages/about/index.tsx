@@ -13,11 +13,11 @@ const AboutUs = (props: Props) => {
             <div className="mx-auto items-center justify-center w-5/6 mt-[60px]">
             <div className='md:w-[426px]'>
                 <h1 
-                className="py-4 font-geist font-medium md:text-[28px] md:leading-[24px] tracking-p[10%] capitalize"
+                className="text-lg font-bold text-gray-800 mb-2"
                 >about us</h1>
 
                 <p
-                className="font-inter font-normal md:text-[14px] md:leading-[19.84px] tracking-p[10%] capitalize"
+                className=" font-inter"
                 >
                 Efficient and durable water pumps for residential, agricultural, and commercial needs.
                 </p>
@@ -26,10 +26,10 @@ const AboutUs = (props: Props) => {
             <div className="md:flex w-full mt-16">
                 <div className="md:w-[50%] md:mr-[20px] flex-col ">
                     <h1 
-                    className="font-inter font-normal md:text-[48px] md:leading-[64.8px] tracking-p[10%] capitalize"
+                    className="text-lg font-bold text-gray-800 mb-2"
                     >Mission</h1>
                     <p
-                    className="font-inter font-normal md:text-[16px] md:leading-[24px] tracking-p[10%] capitalize"
+                    className="font-inter "
                     >At HeritageGuard, we are passionate about preserving and protecting Rwanda’s rich cultural heritage. Our mission is to ensure that the country’s history, traditions, and cultural landmarks are safeguarded for future generations through innovative technology and community involvement.
                     <br /> <br /> We believe that every heritage site, artifact, and cultural tradition tells a story that connects the past with the present. By using advanced tools like digital preservation, virtual tours, and risk management systems, we provide a platform that enables conservationists, local communities, schools, and the public to engage in the preservation process.</p>
                 </div>
@@ -49,10 +49,10 @@ const AboutUs = (props: Props) => {
                 </div>
                 <div className="md:w-[50%]  flex-col ">
                     <h1 
-                    className="font-inter font-normal md:text-[48px] md:leading-[64.8px] tracking-p[10%] capitalize"
-                    >Mission</h1>
+                    className="text-lg font-bold text-gray-800 mb-2"
+                    >Vission</h1>
                     <p
-                    className="font-inter font-normal md:text-[16px] md:leading-[24px] tracking-p[10%] capitalize"
+                    className="text-sm text-gray-600 mb-4"
                     >
                         To be the leading platform for heritage conservation in Rwanda, making cultural preservation accessible and engaging for everyone.
                     </p>
@@ -72,9 +72,9 @@ const AboutUs = (props: Props) => {
             <div className="md:flex w-full mt-16">
                 <div className="md:w-[50%] md:mr-[20px] flex-col ">
                     <h1 
-                    className="font-inter font-normal md:text-[48px] md:leading-[64.8px] tracking-p[10%] capitalize"
+                    className="text-lg font-bold text-gray-800 mb-2"
                     >Values</h1>
-                    <ol className='ml-6 list-disc'>
+                    <ol className='ml-6 list-disc '>
                         <li>Catalog Heritage Sites: We provide a centralized database for recording and mapping Rwanda’s cultural and heritage sites, ensuring they are documented and preserved.</li>
                         <li>Digital Preservation: Our platform offers tools to digitize and archive historical documents, artifacts, and multimedia content to protect them from decay and loss.</li>
                         <li>Conservation Project Management: We help manage the planning and execution of heritage restoration projects with tools for budgeting, timeline tracking, and task management.</li>

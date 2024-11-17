@@ -11,11 +11,11 @@ const Services = (props: Props) => {
             <div className="mx-auto items-center justify-center w-5/6 mt-[60px]">
             <div className='md:w-[426px]'>
                 <h1 
-                className="py-4 font-geist font-medium md:text-[28px] md:leading-[24px] tracking-p[10%] capitalize"
+                className="text-lg font-bold text-gray-800 mb-2"
                 >Our Servces</h1>
 
                 <p
-                className="font-inter font-normal md:text-[14px] md:leading-[19.84px] tracking-p[10%] capitalize"
+                className="text-sm text-gray-600 mb-4"
                 >
                 Efficient and durable water pumps for residential, agricultural, and commercial needs.
                 </p>
