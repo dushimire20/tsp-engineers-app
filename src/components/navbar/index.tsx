@@ -65,7 +65,7 @@ const Navbar = () => {
                   <NavLink to="/product" className={navLinkClass}>
                     Product
                   </NavLink>
-                  <NavLink to="/aboutUs" className={navLinkClass}>
+                  <NavLink to="/about" className={navLinkClass}>
                     About Us
                   </NavLink>
                   <NavLink to="/contact" className={navLinkClass}>
@@ -121,7 +121,7 @@ const Navbar = () => {
               <NavLink to="/product" className={navLinkClass} onClick={handleNavLinkClick}>
                 Product
               </NavLink>
-              <NavLink to="/aboutUs" className={navLinkClass} onClick={handleNavLinkClick}>
+              <NavLink to="/about" className={navLinkClass} onClick={handleNavLinkClick}>
                 About Us
               </NavLink>
               <NavLink to="/contact" className={navLinkClass} onClick={handleNavLinkClick}>
