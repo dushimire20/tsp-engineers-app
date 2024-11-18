@@ -29,7 +29,7 @@ const Home = (props: Props) => {
   return (
     <section className=" md:pb-0 mx-0 items-center justify-center w-full">
       <div className="mx-auto items-center justify-center w-full ">
-        <div className="relative h-full w-full rounded-lg overflow-hidden">
+        <div className="relative h-full w-full overflow-hidden">
           {/* Video Background */}
           <video
             className="h-full w-full object-cover"
@@ -45,140 +45,100 @@ const Home = (props: Props) => {
           {/* Text Overlay */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4 bg-black bg-opacity-30">
             <h1 className="text-4xl font-bold mb-4">Welcome to Our Platform</h1>
-            <p className="text-lg mb-6">
-              Delivering Excellence Solutions
-            </p>
+            <p className="text-lg mb-6">Delivering Excellence Solutions</p>
             <button className="mt-4 px-6 py-2 bg-sky-600 hover:bg-sky-700 rounded-lg text-white">
               Get Started
             </button>
           </div>
         </div>
         <div className="mx-auto text-center w-[436px]">
-          <p className="text-center font-sa mt-6 md:text-[48px] tracking-tight font-medium leading-[62.4px]">
+          <p className="text-center font-sa mt-6 md:text-[32px] tracking-tight font-medium leading-[62.4px]">
             PRODUCT AND SOLUTION
           </p>
         </div>
 
-        <section className="py-8 bg-gray-50">
-          <div className="md:flex flex-wrap w-full gap-8 justify-center mt-4">
-            {products.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col w-full md:w-[286px] rounded-2xl shadow-md border-2 border-gray-200 bg-white hover:shadow-lg transition-shadow duration-300 p-4 mb-6"
-              >
-                <img
-                  alt={`${item.title} showcase`}
-                  className="rounded-t-2xl object-cover mb-4"
-                  src={item.image}
-                />
-                <h1 className="font-inter font-semibold text-[21px] leading-[26.7px] tracking-[-0.13px] mb-2">
-                  {item.title}
-                </h1>
-                <p className="font-inter font-normal text-[16px] leading-[24px] text-gray-700 mb-4">
-                  {item.description}
-                </p>
-                <button className="mt-auto bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200">
-                  Learn More
-                </button>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="mt-8">
-          <div className="mx-auto text-center w-full md:w-[436px]">
-            <p className="text-center font-inter mt-6 text-[20px] tracking-tight font-normal leading-7">
-              Our projects
-            </p>
-            <h2 className="text-center font-sa mt-2 text-[36px] md:text-[48px] tracking-tight font-medium leading-[48px] md:leading-[62.4px]">
-              Style and Sensation <br /> Memory and Magic
-            </h2>
-          </div>
-
-          {/* Projects Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-            {projects.map((project) => (
-              <div
-                key={project.id}
-                className="flex flex-col w-full rounded-2xl shadow-sm border-2 px-4 py-6"
-              >
-                <img
-                  alt={project.title}
-                  className="w-full h-64 object-cover rounded-t-2xl"
-                  src={project.image}
-                />
-                <h3 className="font-inter font-medium text-[21px] leading-[26.7px] mt-4 tracking-[-0.13px]">
-                  {project.title}
-                </h3>
-                <p className="font-inter font-normal text-[16px] leading-[24px] mt-2 tracking-[-0.13px]">
-                  {project.description}
-                </p>
-                <a
-                  href="#"
-                  className="inline-flex items-center mt-4 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        <section className="py-8 bg-gray-50 w-[90%] mx-auto">
+          <div className="w-full overflow-x-auto">
+            <div className="flex gap-8 px-4">
+              {products.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-[286px] rounded-2xl shadow-md border-2 border-gray-200 bg-white hover:shadow-lg transition-shadow duration-300 p-4"
                 >
-                  Read more
-                  <svg
-                    className="rtl:rotate-180 w-4 h-4 ml-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
-            ))}
+                  <img
+                    alt={`${item.title} showcase`}
+                    className="rounded-t-2xl object-cover mb-4 w-full"
+                    src={item.image}
+                  />
+                  <h1 className="font-inter font-semibold text-[21px] leading-[26.7px] tracking-[-0.13px] mb-2">
+                    {item.title}
+                  </h1>
+                  <p className="font-inter font-normal text-[16px] leading-[24px] text-gray-700 mb-4">
+                    {item.description}
+                  </p>
+                  <button className="mt-auto bg-sky-800 text-white py-2 px-4 rounded-lg hover:bg-sky-900 transition-colors duration-200">
+                    Learn More
+                  </button>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* SPONSORS */}
-        <p className="mt-8 mx-auto font-inter text-xl text-center md:leading-[27px] tracking-[10%]">
-          OUR PARTNER
+        <section className="mt-8 bg-sky-800 py-10">
+  <div className="mx-auto  text-center w-[90%]">
+    <p className="text-secondary-200 text-center font-sa mt-2 text-[32px] md:text-[48px] tracking-tight font-medium leading-[48px] md:leading-[62.4px]">
+      Our projects
+    </p>
+  </div>
+
+  {/* Projects Grid */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 w-[90%] mx-auto">
+    {projects.map((project) => (
+      <div
+        key={project.id}
+        className="flex flex-col w-full rounded-2xl shadow-sm border-2 px-4 py-6"
+      >
+        <img
+          alt={project.title}
+          className="w-full h-64 object-cover rounded-t-2xl"
+          src={project.image}
+        />
+        <h3 className="font-inter font-medium text-[21px] leading-[26.7px] mt-4 tracking-[-0.13px] text-secondary-200">
+          {project.title}
+        </h3>
+        <p className="font-inter font-normal text-[16px] leading-[24px] mt-2 tracking-[-0.13px] text-secondary-200">
+          {project.description}
         </p>
-        {isAboveMediumScreens && (
-          <div className=" py-5 mx-auto   md:pb-0 mt-0 border-b-2 border-b-primary-200 w-5/6">
-            <div className="mx-auto">
-              <div className="text-center h-[102px] flex w-full items-center justify-between gap-4 ">
-                <img alt="redbull-sponsor" src={Partener} />
-                <img alt="forbes-sponsor" src={Partener} />
-                <img alt="fortune-sponsor" src={Partener} />
-              </div>
-            </div>
-          </div>
-        )}
+        <a
+          href="#"
+          className="inline-flex items-center mt-4 px-3 py-2 text-sm font-medium text-center text-sky-800 bg-secondary-200 rounded-lg hover:bg-slate-300 focus:ring-4 focus:outline-none"
+        >
+          Read more
+          <svg
+            className="rtl:rotate-180 w-4 h-4 ml-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+          >
+            <path
+              stroke="white"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"
+            />
+          </svg>
+        </a>
+      </div>
+    ))}
+  </div>
+</section>
 
-        {isBelowMediumScreens && (
-          <div className=" py-5 mx-auto   md:pb-0 mt-0 border-b-2 border-b-primary-200 w-5/6">
-            <div className="mx-auto">
-              <div className="text-center h-[40x] flex  items-center justify-between gap-4 ">
-                <p className=" font-poppins font-semibold text-gray-100 text-[16px] leading-9">
-                  Trusted by
-                </p>
-                <img
-                  alt="redbull-sponsor"
-                  className="w-[37px] "
-                  src={Partener}
-                />
-                <img alt="forbes-sponsor" className="w-[37px]" src={Partener} />
-                <img
-                  alt="fortune-sponsor"
-                  className="w-[37px]"
-                  src={Partener}
-                />
-              </div>
-            </div>
-          </div>
-        )}
 
-        <p className="mt-8 mx-auto font-inter text-xl text-center md:leading-[27px] tracking-[10%]">
+       
+        <p className="mt-16 mx-auto font-inter text-xl text-center md:leading-[27px] tracking-[10%]">
           OUR TEAM
         </p>
 
@@ -193,7 +153,7 @@ const Home = (props: Props) => {
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className="min-w-full md:w-[100%] flex gap-8 justify-center items-center" // Each item takes 50% width on medium screens and above
+                className="flex min-w-full md:w-[50%] gap-8 justify-center items-center" // Each item takes 50% width on medium screens and above
               >
                 <div className="flex-col w-full md:w-[429.33px] rounded-2xl shadow-sm border-2 px-4 py-6 bg-white">
                   <p className="text-primary-100 font-inter font-normal text-[16.12px] leading-[24.19px] tracking-[-0.13px] mb-4">

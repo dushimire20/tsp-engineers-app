@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
-import { GlobeAltIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  GlobeAltIcon,
+  Bars3Icon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,7 +28,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 z-30 w-full hover:bg-sky-800 border-b border-gray-200 ${
-        isScrolled ? " " : "bg-transparent"
+        isScrolled ? "bg-sky-800 " : "bg-transparent"
       } transition-all duration-300`}
     >
       <div className="mx-auto w-full max-w-7xl px-6 py-3">
@@ -32,7 +36,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div>
-            <p className="h-8 w-auto text-secondary-200 font-bold font-inter text-lg">TSP Engineers Ltd</p>
+            <p className="h-8 w-auto text-secondary-200 font-bold font-inter text-lg">
+              TSP Engineers Ltd
+            </p>
           </div>
 
           {/* Right Section: Icons and Sign In */}
@@ -53,7 +59,11 @@ const Navbar = () => {
               className="md:hidden text-secondary-200 hover:text-sky-600 transition-all"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <XMarkIcon className="h-6 w-6" />
+              ) : (
+                <Bars3Icon className="h-6 w-6" />
+              )}
             </button>
 
             {/* Sign In with Icon */}
@@ -61,11 +71,21 @@ const Navbar = () => {
               to="/sign-in"
               className="flex items-center gap-1 text-secondary-200 hover:text-sky-600 transition-all"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-</svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+              </svg>
 
-                
               <span className="hidden md:block text-sm">Sign In</span>
             </NavLink>
           </div>
@@ -104,19 +124,39 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 bg-white shadow-md rounded-lg">
             <div className="flex flex-col gap-4 p-4">
-              <NavLink to="/" className={navLinkClass} onClick={() => setIsMenuOpen(false)}>
+              <NavLink
+                to="/"
+                className={navLinkClass}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Home
               </NavLink>
-              <NavLink to="/service" className={navLinkClass} onClick={() => setIsMenuOpen(false)}>
+              <NavLink
+                to="/service"
+                className={navLinkClass}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Service
               </NavLink>
-              <NavLink to="/product" className={navLinkClass} onClick={() => setIsMenuOpen(false)}>
+              <NavLink
+                to="/product"
+                className={navLinkClass}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Product
               </NavLink>
-              <NavLink to="/about" className={navLinkClass} onClick={() => setIsMenuOpen(false)}>
+              <NavLink
+                to="/about"
+                className={navLinkClass}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 About Us
               </NavLink>
-              <NavLink to="/contact" className={navLinkClass} onClick={() => setIsMenuOpen(false)}>
+              <NavLink
+                to="/contact"
+                className={navLinkClass}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Contact
               </NavLink>
               <NavLink
