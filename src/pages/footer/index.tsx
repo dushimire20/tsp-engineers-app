@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         <h2 className="text-center text-3xl font-bold mb-6">FAQs</h2>
         <div className="w-[90%] mx-auto">
           {[
-            "Heritage Site Inventory",
+            "TS Engineers Ltd Site Inventory",
             "Digital Preservation",
             "Conservation Projects Management",
           ].map((question, index) => (

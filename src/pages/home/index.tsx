@@ -81,33 +81,34 @@ const Home = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="mt-16 bg-sky-800 py-10">
-        <h2 className="text-center text-3xl md:text-4xl font-bold text-white mb-6">
-          Our Projects
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-[90%] mx-auto">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="rounded-2xl shadow-sm border-2 bg-white p-6 transition-transform transform hover:scale-105"
-            >
-              <img
-                alt={project.title}
-                className="w-full h-64 object-cover rounded-t-2xl"
-                src={project.image}
-              />
-              <h3 className="mt-4 text-xl font-semibold">{project.title}</h3>
-              <p className="mt-2 text-gray-700">{project.description}</p>
-              <a
-                href="#"
-                className="inline-block mt-4 text-sky-800 font-medium hover:underline"
-              >
-                Read More
-              </a>
-            </div>
-          ))}
-        </div>
-      </section>
+<section className="mt-16 bg-sky-800 py-10">
+  <h2 className="text-center text-3xl md:text-4xl font-bold text-white mb-6">
+    Our Projects
+  </h2>
+  <div className="flex flex-wrap gap-8 w-[90%] mx-auto justify-center">
+    {projects.map((project) => (
+      <div
+        key={project.id}
+        className="flex-1 min-w-[280px] max-w-[30%] rounded-2xl shadow-sm border-2 bg-white p-6 transition-transform transform hover:scale-105"
+      >
+        <img
+          alt={project.title}
+          className="w-full h-64 object-cover rounded-t-2xl"
+          src={project.image}
+        />
+        <h3 className="mt-4 text-xl font-semibold">{project.title}</h3>
+        <p className="mt-2 text-gray-700">{project.description}</p>
+        <a
+          href="#"
+          className="inline-block mt-4 text-sky-800 font-medium hover:underline"
+        >
+          Read More
+        </a>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* Team Section (Responsive Carousel) */}
 <section className="relative py-10 w-[90%] mx-auto">
