@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
-import HomeImage from "@/assets/Home-1.png";
-import Desktop from "@/assets/Desktop.png";
+import HomeVideo from "@/assets/HomeVideo.mp4";
 import Partener from "@/assets/Partener.png";
 import { teamMembers, projects, products } from "@/data/index";
 
@@ -28,15 +27,35 @@ const Home = (props: Props) => {
   };
 
   return (
-    <section className="py-10 md:pb-0 mx-0 items-center justify-center w-full">
-      <div className="mx-auto items-center justify-center w-5/6 mt-[60px]">
-        <img className="" alt="h-full " src={HomeImage} />
+    <section className=" md:pb-0 mx-0 items-center justify-center w-full">
+      <div className="mx-auto items-center justify-center w-full ">
+        <div className="relative h-full w-full rounded-lg overflow-hidden">
+          {/* Video Background */}
+          <video
+            className="h-full w-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src={HomeVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          {/* Text Overlay */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4 bg-black bg-opacity-30">
+            <h1 className="text-4xl font-bold mb-4">Welcome to Our Platform</h1>
+            <p className="text-lg mb-6">
+              Delivering Excellence Solutions
+            </p>
+            <button className="mt-4 px-6 py-2 bg-sky-600 hover:bg-sky-700 rounded-lg text-white">
+              Get Started
+            </button>
+          </div>
+        </div>
         <div className="mx-auto text-center w-[436px]">
-          <p className="text-center font-inter mt-6 md:text-[20px] tracking-tight font-normal leading-7">
-            PRODUCT AND SOLUTION
-          </p>
           <p className="text-center font-sa mt-6 md:text-[48px] tracking-tight font-medium leading-[62.4px]">
-            Style and Sensation <br /> Memory and Magic
+            PRODUCT AND SOLUTION
           </p>
         </div>
 
