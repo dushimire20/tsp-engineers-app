@@ -23,20 +23,8 @@ export const teamMembers = [
     feedback:
       "Mundi Center has been a game-changer for my business. Since moving my shop here, I've seen a significant increase in foot traffic and sales. The location is great, the facilities are top-notch, and the management team is always responsive and supportive. I couldn't be happier with my decision to join this community!",
   },
-  {
-    name: "Derin",
-    role: "CEO",
-    image: Team1,
-    feedback:
-      "Mundi Center has been a game-changer for my business. The facilities are top-notch, and the management team is always responsive and supportive. I couldn't be happier with my decision!",
-  },
-  {
-    name: "Gigi",
-    role: "Assistant Business Manager",
-    image: Team1,
-    feedback:
-      "Mundi Center has significantly increased my shop's foot traffic. The location is great and the management is supportive!",
-  },
+
+
   ];
 
   export const projects = [

@@ -11,6 +11,34 @@ import {
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-100 py-4 mt-8">
+
+      {/* FAQ Section */}
+      <section className="py-10 bg-gray-100">
+        <h2 className="text-center text-3xl font-bold mb-6">FAQs</h2>
+        <div className="w-[90%] mx-auto">
+          {[
+            "Heritage Site Inventory",
+            "Digital Preservation",
+            "Conservation Projects Management",
+          ].map((question, index) => (
+            <details
+              key={index}
+              className="group border-b-[1px] border-gray-300 pb-2 mb-4"
+            >
+              <summary className="cursor-pointer text-lg font-medium group-hover:text-blue-600">
+                {question}
+                <span className="float-right text-xl group-open:rotate-45 transition-transform">
+                  +
+                </span>
+              </summary>
+              <p className="mt-2 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </details>
+          ))}
+        </div>
+      </section>
+      
       <div className="w-5/6 container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         {/* Left Section: Logo */}
         <div className="flex items-center space-x-2">
