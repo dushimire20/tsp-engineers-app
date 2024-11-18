@@ -85,11 +85,12 @@ const ContactUs: React.FC = (props: Props) => {
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               {/* Contact Dropdown */}
-              <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
-                <option value="contact">Contact</option>
-                <option value="support">Support</option>
-                <option value="sales">Sales</option>
-              </select>
+              <input
+                type="phone"
+                placeholder="Contact Number"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+              
               {/* Message */}
               <textarea
                 placeholder="How can I help you?"
