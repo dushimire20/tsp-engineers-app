@@ -15,10 +15,10 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Layout />} >
             <Route index element={<Home />} />
-            <Route path='/about' element={<AboutUs />} />
+            {/* <Route path='/about' element={<AboutUs />} />
             <Route path='/service' element={<Services />} />
             <Route path='/product' element={<Products />} />
-            <Route path='/contact' element={<ContactUs />} />
+            <Route path='/contact' element={<ContactUs />} /> */}
           </Route>
           
         </Routes>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import HomeVideo from "@/assets/HomeVideo.mp4";
 import { teamMembers, projects, products } from "@/data/index";
+import OurTeam from "@/components/Team";
 
 const Home = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
@@ -81,103 +82,36 @@ const Home = () => {
       </section>
 
       {/* Projects Section */}
-<section className="mt-16 bg-sky-800 py-10">
-  <h2 className="text-center text-3xl md:text-4xl font-bold text-white mb-6">
-    Our Projects
-  </h2>
-  <div className="flex flex-wrap gap-8 w-[90%] mx-auto justify-center">
-    {projects.map((project) => (
-      <div
-        key={project.id}
-        className="flex-1 min-w-[280px] max-w-[30%] rounded-2xl shadow-sm border-2 bg-white p-6 transition-transform transform hover:scale-105"
-      >
-        <img
-          alt={project.title}
-          className="w-full h-64 object-cover rounded-t-2xl"
-          src={project.image}
-        />
-        <h3 className="mt-4 text-xl font-semibold">{project.title}</h3>
-        <p className="mt-2 text-gray-700">{project.description}</p>
-        <a
-          href="#"
-          className="inline-block mt-4 text-sky-800 font-medium hover:underline"
-        >
-          Read More
-        </a>
-      </div>
-    ))}
-  </div>
-</section>
-
-
-      {/* Team Section (Responsive Carousel) */}
-<section className="relative py-10 w-[90%] mx-auto">
-  <h2 className="text-center text-2xl md:text-3xl font-bold mb-6">Our Team</h2>
-  <div className="relative h-56 overflow-hidden rounded-lg md:h-[600px]">
-  {/* Carousel Items */}
-  <div
-    className="flex transition-transform duration-700 ease-in-out"
-    style={{
-      transform: `translateX(-${currentIndex * 50}%)`, // Move by 50% per slide
-    }}
-  >
-    {teamMembers.map((member, index) => (
-      <div
-        key={index}
-        className="flex min-w-[50%] gap-8 justify-center items-center" // Each item takes 50% width
-      >
-        <div className="flex-col w-full md:w-[429.33px] rounded-2xl shadow-sm border-2 px-4 py-6 bg-white">
-          <p className="text-primary-100 font-inter font-normal text-[16.12px] leading-[24.19px] tracking-[-0.13px] mb-4">
-            {member.feedback}
-          </p>
-          <div className="flex items-center gap-4">
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-16 h-16 rounded-full object-cover"
-            />
-            <div>
-              <h1 className="text-lg font-semibold">{member.name}</h1>
-              <p className="text-sm text-gray-500">{member.role}</p>
+      <section className="mt-16 bg-sky-800 py-10">
+        <h2 className="text-center text-3xl md:text-4xl font-bold text-white mb-6">
+          Our Projects
+        </h2>
+        <div className="flex flex-wrap gap-8 w-[90%] mx-auto justify-center">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="flex-1 min-w-[280px] max-w-[30%] rounded-2xl shadow-sm border-2 bg-white p-6 transition-transform transform hover:scale-105"
+            >
+              <img
+                alt={project.title}
+                className="w-full h-64 object-cover rounded-t-2xl"
+                src={project.image}
+              />
+              <h3 className="mt-4 text-xl font-semibold">{project.title}</h3>
+              <p className="mt-2 text-gray-700">{project.description}</p>
+              <a
+                href="#"
+                className="inline-block mt-4 text-sky-800 font-medium hover:underline"
+              >
+                Read More
+              </a>
             </div>
-          </div>
+          ))}
         </div>
-      </div>
-    ))}
-  </div>
-
-  {/* Slider Controls */}
-  <button
-    onClick={prevSlide}
-    className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 rounded-full p-2 hover:bg-gray-300"
-  >
-    ❮
-  </button>
-  <button
-    onClick={nextSlide}
-    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 rounded-full p-2 hover:bg-gray-300"
-  >
-    ❯
-  </button>
-
-  {/* Slider Indicators */}
-  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-    {Array.from({ length: Math.ceil(teamMembers.length / 2) }).map((_, index) => (
-      <button
-        key={index}
-        onClick={() => setCurrentIndex(index)}
-        className={`w-3 h-3 rounded-full ${
-          currentIndex === index ? "bg-primary-100" : "bg-gray-300"
-        }`}
-      />
-    ))}
-  </div>
-</div>
-
-</section>
-
-
-      
+      </section>
+      <section>
+        <OurTeam />
+      </section>
     </section>
   );
 };
