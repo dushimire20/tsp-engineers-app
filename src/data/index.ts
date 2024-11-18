@@ -7,6 +7,8 @@ import Controllers from "@/assets/controllers.png"
 import Swimming from "@/assets/swimming-pools.png";
 import Water from "@/assets/water-treatment.png";
 import Chemical from "@/assets/chemicals.png"
+import WaterPump from "@/assets/water_Pump.png";
+import SmartIrrigation from "@/assets/Smart_Irrigation.jpg"
 
 export const teamMembers = [
   {
@@ -33,7 +35,7 @@ export const teamMembers = [
       title: "Water Pump",
       description:
         "This template contains product showcase of the business, suitable for business with large number of products or services.",
-      image: OurProject,
+      image: WaterPump,
     },
     {
       id: 2,
@@ -47,7 +49,7 @@ export const teamMembers = [
       title: "Smart Irrigation",
       description:
         "Automated irrigation systems to optimize water usage for agriculture.",
-      image: OurProject,
+      image: SmartIrrigation,
     },
   
     {
