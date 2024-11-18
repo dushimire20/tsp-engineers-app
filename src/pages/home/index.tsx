@@ -3,11 +3,9 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import HomeImage from "@/assets/Home-1.png";
 import Desktop from "@/assets/Desktop.png";
 import Partener from "@/assets/Partener.png";
-import  {teamMembers, projects, products} from "@/data/index";
+import { teamMembers, projects, products } from "@/data/index";
 
 type Props = {};
-
-
 
 const Home = (props: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
@@ -66,8 +64,6 @@ const Home = (props: Props) => {
               </div>
             ))}
           </div>
-
-         
         </section>
 
         <section className="mt-8">
@@ -168,65 +164,65 @@ const Home = (props: Props) => {
         </p>
 
         <div className="relative h-56 overflow-hidden rounded-lg md:h-[600px]">
-      {/* Carousel Items */}
-      <div
-        className="flex transition-transform duration-700 ease-in-out"
-        style={{
-          transform: `translateX(-${currentIndex * 100}%)`, // Move by 50% per slide
-        }}
-      >
-        {teamMembers.map((member, index) => (
+          {/* Carousel Items */}
           <div
-            key={index}
-            className="min-w-full md:w-[100%] flex gap-8 justify-center items-center" // Each item takes 50% width on medium screens and above
+            className="flex transition-transform duration-700 ease-in-out"
+            style={{
+              transform: `translateX(-${currentIndex * 100}%)`, // Move by 50% per slide
+            }}
           >
-            <div className="flex-col w-full md:w-[429.33px] rounded-2xl shadow-sm border-2 px-4 py-6 bg-white">
-              <p className="text-primary-100 font-inter font-normal text-[16.12px] leading-[24.19px] tracking-[-0.13px] mb-4">
-                {member.feedback}
-              </p>
-              <div className="flex items-center gap-4">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-16 h-16 rounded-full object-cover"
-                />
-                <div>
-                  <h1 className="text-lg font-semibold">{member.name}</h1>
-                  <p className="text-sm text-gray-500">{member.role}</p>
+            {teamMembers.map((member, index) => (
+              <div
+                key={index}
+                className="min-w-full md:w-[100%] flex gap-8 justify-center items-center" // Each item takes 50% width on medium screens and above
+              >
+                <div className="flex-col w-full md:w-[429.33px] rounded-2xl shadow-sm border-2 px-4 py-6 bg-white">
+                  <p className="text-primary-100 font-inter font-normal text-[16.12px] leading-[24.19px] tracking-[-0.13px] mb-4">
+                    {member.feedback}
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-16 h-16 rounded-full object-cover"
+                    />
+                    <div>
+                      <h1 className="text-lg font-semibold">{member.name}</h1>
+                      <p className="text-sm text-gray-500">{member.role}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
-        ))}
-      </div>
 
-      {/* Slider Controls */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 rounded-full p-2 hover:bg-gray-300"
-      >
-        ❮
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 rounded-full p-2 hover:bg-gray-300"
-      >
-        ❯
-      </button>
-
-      {/* Slider Indicators */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {teamMembers.map((_, index) => (
+          {/* Slider Controls */}
           <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full ${
-              currentIndex === index ? 'bg-primary-100' : 'bg-gray-300'
-            }`}
-          />
-        ))}
-      </div>
-    </div>
+            onClick={prevSlide}
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 rounded-full p-2 hover:bg-gray-300"
+          >
+            ❮
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 rounded-full p-2 hover:bg-gray-300"
+          >
+            ❯
+          </button>
+
+          {/* Slider Indicators */}
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            {teamMembers.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-3 h-3 rounded-full ${
+                  currentIndex === index ? "bg-primary-100" : "bg-gray-300"
+                }`}
+              />
+            ))}
+          </div>
+        </div>
 
         <section className="mx-auto py-8 bg-gray-100">
           <h2 className="text-3xl font-bold text-center mb-4">

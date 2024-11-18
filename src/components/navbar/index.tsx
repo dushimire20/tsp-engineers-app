@@ -5,7 +5,6 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import Logo from "@/assets/Logo-1.png";
 
 const Navbar = () => {
-  const flexBetween = "flex items-center justify-between font-inter";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,32 +18,28 @@ const Navbar = () => {
   }, []);
 
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
-    `px-4 py-2 rounded-full  ${
+    `px-4 py-2 rounded-full ${
       isActive
-        ? "bg-gray-100 text-black font-medium border border-sky-500"
-        : "text-gray-600 hover:bg-gray-100 hover:text-black hover:border hover:border-sky-500 "
+        ? "bg-gray-100 text-black font-medium border "
+        : "text-gray-600 hover:bg-gray-100 hover:text-black hover:border"
     } transition-all duration-300`;
 
   return (
     <nav>
       <div
-        className={`${flexBetween} fixed top-0 z-30 w-full py-[20px] ${
-          isScrolled
-            ? "bg-white shadow-lg"
-            : "bg-white"
+        className={`fixed top-0 z-30 w-full py-[20px] ${
+          isScrolled ? "bg-white shadow-lg" : "bg-white"
         } transition-all duration-300`}
       >
         <div className="mx-auto w-5/6 flex items-center justify-between">
-          {/* Left Section */}
-          <div className="flex items-center gap-4 ">
-            <img src={Logo} alt="Logo" className="h-6 w-auto" />
-            <span className="font-semibold text-black">TSP Engineer Ltd</span>
+          {/* Logo (Left Section) */}
+          <div className="flex items-center md:w-[20%]">
+            <img src={Logo} alt="Logo" className="h-8 w-auto" />
           </div>
 
-          {/* Right Section */}
+          {/* Navigation Links (Center Section) */}
           {isAboveMediumScreens ? (
-            <div className="flex items-center gap-8">
-              {/* Navigation Links */}
+            <div className="flex-grow flex justify-center">
               <div className="flex items-center gap-4">
                 <NavLink to="/" className={navLinkClass}>
                   Home
@@ -62,22 +57,24 @@ const Navbar = () => {
                   Contact
                 </NavLink>
               </div>
+            </div>
+          ) : null}
 
-              {/* Sign In and Get Started */}
-              <div className="flex items-center gap-4">
-                <NavLink
-                  to="/signIn"
-                  className="text-gray-600 hover:text-black transition-all duration-300"
-                >
-                  Sign In
-                </NavLink>
-                <NavLink
-                  to="/getstarted"
-                  className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-all duration-300 flex items-center gap-2"
-                >
-                  Get Started <span>→</span>
-                </NavLink>
-              </div>
+          {/* Right Section: Sign In & Get Started */}
+          {isAboveMediumScreens ? (
+            <div className="flex items-center gap-4 md:w-[20%] justify-end">
+              <NavLink
+                to="/signIn"
+                className="text-gray-600 hover:text-black transition-all duration-300"
+              >
+                Sign In
+              </NavLink>
+              <NavLink
+                to="/getstarted"
+                className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-all duration-300"
+              >
+                Get Started
+              </NavLink>
             </div>
           ) : (
             <button
@@ -98,19 +95,39 @@ const Navbar = () => {
               </button>
             </div>
             <div className="flex flex-col items-center gap-4 text-lg mt-8">
-              <NavLink to="/" className={navLinkClass} onClick={() => setIsMenuToggled(false)}>
+              <NavLink
+                to="/"
+                className={navLinkClass}
+                onClick={() => setIsMenuToggled(false)}
+              >
                 Home
               </NavLink>
-              <NavLink to="/service" className={navLinkClass} onClick={() => setIsMenuToggled(false)}>
+              <NavLink
+                to="/service"
+                className={navLinkClass}
+                onClick={() => setIsMenuToggled(false)}
+              >
                 Service
               </NavLink>
-              <NavLink to="/product" className={navLinkClass} onClick={() => setIsMenuToggled(false)}>
+              <NavLink
+                to="/product"
+                className={navLinkClass}
+                onClick={() => setIsMenuToggled(false)}
+              >
                 Product
               </NavLink>
-              <NavLink to="/about" className={navLinkClass} onClick={() => setIsMenuToggled(false)}>
+              <NavLink
+                to="/about"
+                className={navLinkClass}
+                onClick={() => setIsMenuToggled(false)}
+              >
                 About Us
               </NavLink>
-              <NavLink to="/contact" className={navLinkClass} onClick={() => setIsMenuToggled(false)}>
+              <NavLink
+                to="/contact"
+                className={navLinkClass}
+                onClick={() => setIsMenuToggled(false)}
+              >
                 Contact
               </NavLink>
               <NavLink
