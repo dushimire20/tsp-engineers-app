@@ -105,3 +105,42 @@ export const teamMembers = [
       image: Chemical,
     },
   ]
+
+  // data/menuData.js
+
+export const menuData = [
+  { name: "Home", path: "/" },
+  {
+    name: "Service",
+    path: "/service",
+    dropdown: [
+      { name: "Solar Solutions", path: "/service/solar" },
+      { name: "Swimming Pools", path: "/service/swimming-pool" },
+      { name: "Water Treatments", path: "/service/water-treatments" },
+      { name: "General Machinery", path: "/service/machinery" },
+      { name: "Controllers & Digital Solutions", path: "/service/controllers" },
+      { name: "Chemicals", path: "/service/chemicals" },
+      { name: "Irrigation & Water Supply Accessories", path: "/service/irrigation" },
+    ],
+  },
+  {
+    name: "Projects",
+    path: "/projects",
+    dropdown: [
+      { name: "Ongoing", path: "/project/ongoing" },
+      { name: "Completed", path: "/project/completed" },
+    ],
+  },
+  { name: "Product", path: "/product" },
+  { name: "About Us", path: "/about" },
+  {
+    name: "Download",
+    path: "/download",
+    dropdown: [
+      { name: "Catalogue", path: "/catalogue" },
+      { name: "Document", path: "/document" },
+    ],
+  },
+  { name: "Gallery", path: "/gallery" },
+  { name: "Contact", path: "/contact" },
+];

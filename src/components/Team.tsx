@@ -1,4 +1,7 @@
 import React from 'react'
+import TeamM1 from "@/assets/TeamM2.jpg";
+import TeamM2 from "@/assets/TeamM1.jpg";
+
 
 interface Props {
     
@@ -15,7 +18,7 @@ const OurTeam = (props: Props) => {
       </div> 
       <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <div className="text-center text-gray-500 dark:text-gray-400">
-              <img className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
+              <img className="mx-auto mb-4 w-36 h-36 rounded-full" src={TeamM1} alt="Bonnie Avatar" />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href="#">Bonnie Green</a>
               </h3>
@@ -44,7 +47,7 @@ const OurTeam = (props: Props) => {
               </ul>
           </div>
           <div className="text-center text-gray-500 dark:text-gray-400">
-              <img className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png" alt="Helene Avatar" />
+              <img className="mx-auto mb-4 w-36 h-36 rounded-full" src={TeamM2} alt="Helene Avatar" />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href="#">Helene Engels</a>
               </h3>
