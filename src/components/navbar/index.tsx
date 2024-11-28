@@ -3,6 +3,7 @@ import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { menuData } from "@/data/index";
+import Logo from "@/assets/Logo.png";
 
 
 const Navbar = () => {
@@ -29,7 +30,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-30 w-full border-b border-gray-200 ${
+      className={`fixed top-0 z-30 w-full border-b  ${
         isHomePage
           ? isScrolled
             ? "bg-sky-800"
@@ -40,7 +41,8 @@ const Navbar = () => {
       <div className="mx-auto w-full max-w-7xl px-6 py-3">
         <div className="flex items-center justify-between">
           <p className="h-8 w-auto text-secondary-200 font-bold font-inter text-lg">
-            
+            TSP Engineering Ltd
+            {/* <img src={Logo} className=" h-[70px] w-[120px] text-white" /> */}
            </p>
 
           <div className="flex items-center gap-4">

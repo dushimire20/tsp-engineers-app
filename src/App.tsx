@@ -3,6 +3,7 @@ import Home from '@/pages/home';
 import Layout from '@/components/Layout';
 import AboutUs from '@/pages/about';
 import ContactUs from '@/pages/contact';
+import Solars from './pages/services/solar';
 
 
 const App: React.FC = () => {
@@ -14,6 +15,7 @@ const App: React.FC = () => {
           <Route index element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/service/solar" element={<Solars/>} />
         </Route>
       </Routes>
     </Router>

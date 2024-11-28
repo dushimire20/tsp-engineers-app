@@ -145,3 +145,69 @@ export const menuData = [
   { name: "Gallery", path: "/gallery" },
   { name: "Contact", path: "/contact" },
 ];
+
+
+export const SolarServices = [
+  {
+    image: "/src/assets/Solars/Solar-Panel.jpg",
+    name: "Solar panels & Support Structures",
+    discription: "High-efficiency solar panels and durable support structures for optimal solar energy harvesting.",
+    oldPrice: "Price",
+    path:"/solar-panels"
+  },
+
+  {
+    image: "/src/assets/Solars/solar-pumps--controls.jpg",
+    name: "Solar pumps and controls",
+    discription: "Solar-powered pumps and controllers for efficient and sustainable water management.",
+    oldPrice: "Price",
+     path:"/solar-pumps--controls"
+  },
+  {
+    image: "/src/assets/Solars/water-heaters.jpg",
+    name: "Water Heaters",
+    discription: "High-performance solar water heaters for reliable and cost-effective hot water supply.",
+    oldPrice: "Price",
+    path:"/water-heaters"   
+    
+  },
+
+  {
+    image: "/src/assets/Solars/digital-power-solutions.jpg",
+    name: "Digital power solutions",
+    discription: "Innovative digital power solutions for efficient and reliable energy management.",
+    oldPrice: "Price",
+    path:"/digital-power-solutions"   
+    
+  },
+
+  {
+    image: "/src/assets/Solars/energy-storage-systems.jpg",
+    name: "Energy storage systems",
+    discription: "Advanced energy storage systems for reliable and sustainable power supply.",
+    oldPrice: "Price",
+    path:"/energy-storage-systems"   
+    
+  },
+
+  {
+    image: "/src/assets/Solars/inverters.jpg",
+    name: "Inverters",
+    discription: "High-efficiency inverters for seamless conversion of DC power to AC power.",
+    oldPrice: "Price",
+    path:"/inverters"   
+    
+  },
+
+  {
+    image: "/src/assets/Solars/accessories_2.jpg",
+    name: "accessories",
+    discription: "Essential accessories and components for seamless solar energy systems.",
+    oldPrice: "Price",
+    path:"/solar/Accessories"   
+    
+  },
+
+  
+  
+]
