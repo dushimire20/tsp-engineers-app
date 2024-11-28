@@ -9,6 +9,7 @@ import Water from "@/assets/water-treatment.png";
 import Chemical from "@/assets/chemicals.png"
 import WaterPump from "@/assets/water_Pump.png";
 import SmartIrrigation from "@/assets/Smart_Irrigation.jpg"
+import sampleData from "./services";
 
 export const teamMembers = [
   {
@@ -111,8 +112,8 @@ export const teamMembers = [
 export const menuData = [
   { name: "Home", path: "/" },
   {
-    name: "Service",
-    path: "/service",
+    name: "Product & Solutions",
+    path: "/solutions",
     dropdown: [
       { name: "Solar Solutions", path: "/service/solar" },
       { name: "Swimming Pools", path: "/service/swimming-pool" },
@@ -131,7 +132,7 @@ export const menuData = [
       { name: "Completed", path: "/project/completed" },
     ],
   },
-  { name: "Product", path: "/product" },
+ 
   { name: "About Us", path: "/about" },
   {
     name: "Download",

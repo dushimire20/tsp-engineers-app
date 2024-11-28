@@ -4,6 +4,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { menuData } from "@/data/index";
 
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,8 +40,8 @@ const Navbar = () => {
       <div className="mx-auto w-full max-w-7xl px-6 py-3">
         <div className="flex items-center justify-between">
           <p className="h-8 w-auto text-secondary-200 font-bold font-inter text-lg">
-            TSP Engineers Ltd
-          </p>
+            
+           </p>
 
           <div className="flex items-center gap-4">
             {/* Mobile Menu Button */}
