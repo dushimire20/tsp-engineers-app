@@ -40,9 +40,9 @@ const Navbar = () => {
     >
       <div className="mx-auto w-full max-w-7xl px-6 py-3">
         <div className="flex items-center justify-between">
-          <p className="h-8 w-auto text-secondary-200 font-bold font-inter text-lg">
+          <p className="h-6 w-auto text-secondary-200 font-bold font-inter text-lg">
             TSP Engineering Ltd
-            {/* <img src={Logo} className=" h-[70px] w-[120px] text-white" /> */}
+            {/* <img src={Logo} className=" h-16 w-auto text-white" /> */}
            </p>
 
           <div className="flex items-center gap-4">

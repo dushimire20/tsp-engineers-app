@@ -153,7 +153,7 @@ export const SolarServices = [
     name: "Solar panels & Support Structures",
     discription: "High-efficiency solar panels and durable support structures for optimal solar energy harvesting.",
     oldPrice: "Price",
-    path:"/solar-panels"
+    path:"/solar-panels",
   },
 
   {
