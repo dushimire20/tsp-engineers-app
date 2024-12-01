@@ -129,7 +129,11 @@ const Home = () => {
 
       <section
       className="py-16"
-      >       
+      >    
+      <p className="font-manrope text-5xl text-sky-800 font-bold leading-[4rem] mb-7 text-center py-6">
+        Our Product & Solutions
+        
+        </p>   
         <ProjectGrid products={products} />    
         
         
