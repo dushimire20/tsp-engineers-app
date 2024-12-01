@@ -62,19 +62,19 @@ const Footer = () => {
 
           <ul className="mt-6 space-y-5">
             <li>
-              <a href='javascript:void(0)' className='hover:text-white text-gray-300 text-sm'>Web Development</a>
+              <a href='javascript:void(0)' className='hover:text-white text-gray-300 text-sm'>Solar Solutions</a>
             </li>
             <li>
-              <a href='javascript:void(0)' className='hover:text-white text-gray-300 text-sm'>Pricing</a>
+              <a href='javascript:void(0)' className='hover:text-white text-gray-300 text-sm'>Swimming Pools</a>
             </li>
             <li>
-              <a href='javascript:void(0)' className='hover:text-white text-gray-300 text-sm'>Support</a>
+              <a href='javascript:void(0)' className='hover:text-white text-gray-300 text-sm'>Water treatments</a>
             </li>
             <li>
-              <a href='javascript:void(0)' className='hover:text-white text-gray-300 text-sm'>Client Portal</a>
+              <a href='javascript:void(0)' className='hover:text-white text-gray-300 text-sm'>General Machinery</a>
             </li>
             <li>
-              <a href='javascript:void(0)' className='hover:text-white text-gray-300 text-sm'>Resources</a>
+              <a href='javascript:void(0)' className='hover:text-white text-gray-300 text-sm'>Accessories</a>
             </li>
           </ul>
         </div>

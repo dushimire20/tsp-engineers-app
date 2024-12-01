@@ -30,77 +30,47 @@ export const teamMembers = [
 
   ];
 
-  export const projects = [
-    {
-      id: 1,
-      title: "Water Pump",
-      description:
-        "This template contains product showcase of the business, suitable for business with large number of products or services.",
-      image: WaterPump,
-    },
-    {
-      id: 2,
-      title: "Solar Panel",
-      description:
-        "Solar Panels & Support Structures Solar Water Heaters Inverters / Backup Systems Solar Pumps and Controls Accessories Digital Power Solutions Energy Storage Systems",
-      image: OurProject,
-    },
-    {
-      id: 3,
-      title: "Smart Irrigation",
-      description:
-        "Automated irrigation systems to optimize water usage for agriculture.",
-      image: SmartIrrigation,
-    },
-  
-    {
-      id: 4,
-      title: "Smart Irrigation",
-      description:
-        "Automated irrigation systems to optimize water usage for agriculture.",
-      image: OurProject,
-    },
-  ];
-
   export const products = [
     {
-      title: "Water Pump",
+      name: "Solar Solutions",
+      description:
+        "Ideal for showcasing renewable energy products, suitable for eco-friendly businesses.",
+      image: Solar,
+      path:"service/solar"
+    },
+    {
+      name: "Water Pumps",
       description:
         "Dayliff,, Pedrollo, Grundfos, Davey, DAB, Rovatti, Pompe, Flowserve",
       image: Desktop,
     },
+    
     {
-      title: "Solar Panels",
-      description:
-        "Ideal for showcasing renewable energy products, suitable for eco-friendly businesses.",
-      image: Solar,
-    },
-    {
-      title: "General Machinery",
+      name: "General Machinery",
       description:
         "DG-P, DG Diesel Generators,  DG Multi-4, DGW Welding Generators, DGY Generators,  DGC Generators,DGP Generators,Generators Accessories, DLV/DLA Engines,  DLY Diesel Engines,  Kohler KD Diesel Engines ...",
       image: Machinery,
     },
     {
-      title: "Controllers and Digital Solutions",
+      name: "Controllers and Digital Solutions",
       description:
         "A comprehensive product showcase for digital tools and heavy machinery.",
       image: Controllers,
     },
     {
-      title: "Swimming Pools",
+      name: "Swimming Pools",
       description:
         "Filters Pumps Chemicals & Chlorinators Accessories Spas & Saunas Fountain Nozzles",
       image: Swimming,
     },
     {
-      title: "Water Treatment",
+      name: "Water Treatment",
       description:
         "Domestic Treatment Reverse Osmosis & UV Water Treatment Plants Air Blowers Filters & Softeners Chemical Dosage Water Treatment Media",
       image: Water,
     },
     {
-      title: "Chemical",
+      name: "Chemicals",
       description:
         "A comprehensive product showcase for Chemical tools.",
       image: Chemical,
