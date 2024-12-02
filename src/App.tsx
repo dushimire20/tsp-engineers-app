@@ -7,6 +7,8 @@ import Solars from './pages/services/solar';
 import SolarPanels from './pages/services/solar/solarPanels';
 import WaterHeaters from './pages/services/solar/waterHeaters';
 import SolarPumps from './pages/services/solar/solarPumps';
+import Catalogue from './pages/catalogue';
+import Document from './pages/document';
 
 
 const App: React.FC = () => {
@@ -22,6 +24,8 @@ const App: React.FC = () => {
           <Route path="/solarPanels" element={<SolarPanels />} />
           <Route path="/waterHeaters" element={<WaterHeaters />} />
           <Route path="/solarControls" element={<SolarPumps />} />
+          <Route path="/catalogue" element ={<Catalogue/>} />
+          <Route path="/document" element={<Document/>} />
         </Route>
       </Routes>
     </Router>
