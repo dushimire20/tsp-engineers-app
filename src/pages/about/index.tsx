@@ -7,116 +7,96 @@ interface Props {}
 
 const AboutUs = (props: Props) => {
   return (
-    <section className="py-10 md:pb-0 mx-0 items-center justify-center w-full">
-      <div className="mx-auto items-center justify-center w-5/6 mt-[60px]">
-        <div className="md:w-[426px]">
-          <h1 className="text-lg font-bold text-gray-800 mb-2">about us</h1>
-
-          <p className=" font-inter text-sm text-gray-600 mb-4">
-            Efficient and durable water pumps for residential, agricultural, and
-            commercial needs.
+    <section className="py-10 bg-gray-50">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+        {/* Introduction */}
+        <div className="text-center mb-12">
+          <h1 className="text-3xl font-extrabold text-gray-800 mb-4">About Us</h1>
+          <p className="text-lg text-gray-600">
+            Efficient and durable water pumps for residential, agricultural, and commercial needs.
           </p>
         </div>
 
-        <div className="md:flex w-full mt-16">
-          <div className="md:w-[50%] md:mr-[20px] flex-col ">
-            <h1 className="text-lg font-bold text-gray-800 mb-2">Mission</h1>
-            <p className="font-inter ">
-              At HeritageGuard, we are passionate about preserving and
-              protecting Rwanda’s rich cultural heritage. Our mission is to
-              ensure that the country’s history, traditions, and cultural
-              landmarks are safeguarded for future generations through
-              innovative technology and community involvement.
-              <br /> <br /> We believe that every heritage site, artifact, and
-              cultural tradition tells a story that connects the past with the
-              present. By using advanced tools like digital preservation,
-              virtual tours, and risk management systems, we provide a platform
-              that enables conservationists, local communities, schools, and the
-              public to engage in the preservation process.
+        {/* Mission Section */}
+        <div className="flex flex-col md:flex-row items-center mb-16 gap-8">
+          <div className="md:w-1/2">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              At HeritageGuard, we are passionate about preserving and protecting Rwanda’s rich
+              cultural heritage. Our mission is to ensure that the country’s history, traditions,
+              and cultural landmarks are safeguarded for future generations through innovative
+              technology and community involvement.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              We believe every heritage site, artifact, and cultural tradition tells a story that
+              connects the past with the present. By using advanced tools like digital preservation,
+              virtual tours, and risk management systems, we provide a platform that enables
+              conservationists, local communities, and the public to engage in preservation.
             </p>
           </div>
-          <div className="md:w-[50%] md:ml-[20px]">
-            <img alt="" src={M1} className="" />
+          <div className="md:w-1/2">
+            <img src={M1} alt="Mission" className="rounded-lg shadow-md" />
           </div>
         </div>
 
-        <div className="md:flex w-full mt-16 gap-8">
-          <div className="md:w-[50%] ">
-            <img alt="" src={V1} className="" />
-          </div>
-          <div className="md:w-[50%]  flex-col ">
-            <h1 className="text-lg font-bold text-gray-800 mb-2">Vission</h1>
-            <p className="text-sm text-gray-600 mb-4">
-              To be the leading platform for heritage conservation in Rwanda,
-              making cultural preservation accessible and engaging for everyone.
+        {/* Vision Section */}
+        <div className="flex flex-col md:flex-row-reverse items-center mb-16 gap-8">
+          <div className="md:w-1/2">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Vision</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              To be the leading platform for heritage conservation in Rwanda, making cultural
+              preservation accessible and engaging for everyone.
             </p>
-            <ol className="ml-6 list-disc">
-              <li>Our Mission</li>
-              <li>
-                Preserve Rwanda's cultural heritage through technology,
-                documentation, and restoration efforts.
+            <ul className="list-disc list-inside space-y-2">
+              <li className="text-gray-700">Preserve Rwanda's cultural heritage through technology.</li>
+              <li className="text-gray-700">
+                Engage local communities in heritage conservation.
               </li>
-              <li>
-                Engage local communities in heritage conservation, ensuring that
-                everyone plays a role in protecting the country’s history.
+              <li className="text-gray-700">
+                Promote education and awareness with virtual experiences and resources.
               </li>
-              <li>
-                Promote education and awareness by offering learning resources
-                and virtual experiences that showcase the significance of
-                Rwanda’s cultural sites and traditions.
-              </li>
-            </ol>
+            </ul>
+          </div>
+          <div className="md:w-1/2">
+            <img src={V1} alt="Vision" className="rounded-lg shadow-md" />
           </div>
         </div>
 
-        <div className="md:flex w-full mt-16">
-          <div className="md:w-[50%] md:mr-[20px] flex-col ">
-            <h1 className="text-lg font-bold text-gray-800 mb-2">Values</h1>
-            <ol className="ml-6 list-disc ">
-              <li>
-                Catalog Heritage Sites: We provide a centralized database for
-                recording and mapping Rwanda’s cultural and heritage sites,
-                ensuring they are documented and preserved.
+        {/* Values Section */}
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className="md:w-1/2">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Values</h2>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-4">
+                <div className="bg-gray-800 text-white w-6 h-6 flex items-center justify-center rounded-full text-sm font-bold">
+                  1
+                </div>
+                <p className="text-gray-700">
+                  Catalog Heritage Sites: A centralized database for recording Rwanda’s cultural and
+                  heritage sites.
+                </p>
               </li>
-              <li>
-                Digital Preservation: Our platform offers tools to digitize and
-                archive historical documents, artifacts, and multimedia content
-                to protect them from decay and loss.
+              <li className="flex items-start gap-4">
+                <div className="bg-gray-800 text-white w-6 h-6 flex items-center justify-center rounded-full text-sm font-bold">
+                  2
+                </div>
+                <p className="text-gray-700">
+                  Digital Preservation: Tools to digitize and archive historical documents and
+                  artifacts.
+                </p>
               </li>
-              <li>
-                Conservation Project Management: We help manage the planning and
-                execution of heritage restoration projects with tools for
-                budgeting, timeline tracking, and task management.
+              <li className="flex items-start gap-4">
+                <div className="bg-gray-800 text-white w-6 h-6 flex items-center justify-center rounded-full text-sm font-bold">
+                  3
+                </div>
+                <p className="text-gray-700">
+                  Virtual Heritage Tours: Immersive AR/VR experiences showcasing Rwanda's landmarks.
+                </p>
               </li>
-              <li>
-                Virtual Heritage Tours: Using AR and VR technologies, we offer
-                immersive virtual experiences that bring Rwanda’s cultural
-                landmarks to life.
-              </li>
-              <li>
-                Community Engagement: We empower local communities to take part
-                in heritage conservation efforts through discussions, volunteer
-                programs, and collaborative initiatives.
-              </li>
-              <li>
-                Education & Awareness: We partner with schools and organizations
-                to create educational programs and modules that teach the
-                importance of cultural preservation.
-              </li>
-              <li>
-                Artifact Documentation and Authentication: We ensure the
-                authenticity of cultural artifacts through proper documentation
-                and digital verification methods.
-              </li>
-              <li>
-                Risk & Safety Planning: We assess potential threats to heritage
-                sites and develop disaster preparedness plans to safeguard them
-                against natural and human-made risks.
-              </li>
-            </ol>
+            </ul>
           </div>
-          <div className="md:w-[50%] md:ml-[20px] md:mt-10">
-            <img alt="" src={Vl1} className="" />
+          <div className="md:w-1/2">
+            <img src={Vl1} alt="Values" className="rounded-lg shadow-md" />
           </div>
         </div>
       </div>
