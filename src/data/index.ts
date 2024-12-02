@@ -1,5 +1,4 @@
 import Team1 from "@/assets/Team1.png";
-import OurProject from "@/assets/OurProject.png";
 import Desktop from "@/assets/Desktop.png";
 import Solar from "@/assets/Solar.png"
 import Machinery from "@/assets/general-machinery.png"
@@ -7,9 +6,6 @@ import Controllers from "@/assets/controllers.png"
 import Swimming from "@/assets/swimming-pools.png";
 import Water from "@/assets/water-treatment.png";
 import Chemical from "@/assets/chemicals.png"
-import WaterPump from "@/assets/water_Pump.png";
-import SmartIrrigation from "@/assets/Smart_Irrigation.jpg"
-import sampleData from "./services";
 import SolarPanels from "/src/assets/Solars/Solar-Panel.jpg"
 import SolarPumps from "/src/assets/Solars/solar-pumps--controls.jpg"
 

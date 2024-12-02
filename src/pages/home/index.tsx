@@ -128,9 +128,9 @@ const Home = () => {
       </section>
 
       <section
-      className="py-16"
+      className="py-24 bg-sky-800 "
       >    
-      <p className="font-manrope text-5xl text-sky-800 font-bold leading-[4rem] mb-7 text-center py-6">
+      <p className="font-manrope text-5xl text-white font-bold leading-[4rem] mb-7 text-center py-6">
         Our Product & Solutions
         
         </p>   
