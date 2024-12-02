@@ -1,5 +1,7 @@
 import React from "react";
 import H from "@/assets/HomeImage2.jpg";
+import M1 from "@/assets/gallery/Nzove İçme Suyu Arıtma Projesi.jpg"
+import M2 from "@/assets/gallery/Gihira I Rwanda İçme Suyu Arıtma Tesisi (Rehabilitasyon).jpg"
 
 interface Props {}
 
@@ -13,13 +15,13 @@ const AboutUs = (props: Props) => {
               <div className="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
                 <img
                   className=" rounded-xl object-cover"
-                  src="https://pagedone.io/asset/uploads/1717741205.png"
+                  src={M1}
                   alt="about Us image"
                 />
               </div>
               <img
                 className="sm:ml-0 ml-auto rounded-xl object-cover"
-                src="https://pagedone.io/asset/uploads/1717741215.png"
+                src={M2}
                 alt="about Us image"
               />
             </div>

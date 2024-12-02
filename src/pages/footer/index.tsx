@@ -4,8 +4,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className=" tracking-wide bg-sky-800 px-8 py-12 ">
-      <div className="w-full mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-x-6 gap-y-10">
-        <div>
+      <div className=" justify-center items-center  w-full mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-x-6 gap-y-10">
+        <div className="">
           <p className="text-white font-semibold text-lg relative max-sm:cursor-pointer">TSP Engineerig LTD</p>
 
           <ul className="mt-10 flex space-x-5">
@@ -79,7 +79,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
+        {/* <div>
           <h4 className="text-white font-semibold text-lg relative max-sm:cursor-pointer">Platforms <svg
             xmlns="http://www.w3.org/2000/svg" width="16px" height="16px"
             className="sm:hidden absolute right-0 top-1 fill-[#d6d6d6]" viewBox="0 0 24 24">
@@ -102,7 +102,7 @@ const Footer = () => {
               <a href='' className='hover:text-white text-gray-300 text-sm'>UIPath</a>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         <div>
           <h4 className="text-white font-semibold text-lg relative max-sm:cursor-pointer">Company <svg
