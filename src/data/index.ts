@@ -10,6 +10,8 @@ import Chemical from "@/assets/chemicals.png"
 import WaterPump from "@/assets/water_Pump.png";
 import SmartIrrigation from "@/assets/Smart_Irrigation.jpg"
 import sampleData from "./services";
+import SolarPanels from "/src/assets/Solars/Solar-Panel.jpg"
+import SolarPumps from "/src/assets/Solars/solar-pumps--controls.jpg"
 
 export const teamMembers = [
   {
@@ -119,7 +121,7 @@ export const menuData = [
 
 export const SolarServices = [
   {
-    image: "/src/assets/Solars/Solar-Panel.jpg",
+    image: SolarPanels,
     name: "Solar panels & Support Structures",
     discription: "High-efficiency solar panels and durable support structures for optimal solar energy harvesting.",
     oldPrice: "Price",
@@ -127,7 +129,7 @@ export const SolarServices = [
   },
 
   {
-    image: "/src/assets/Solars/solar-pumps--controls.jpg",
+    image: SolarPumps,
     name: "Solar pumps and controls",
     discription: "Solar-powered pumps and controllers for efficient and sustainable water management.",
     oldPrice: "Price",
