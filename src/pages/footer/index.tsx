@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "@/assets/logo.png"
 
 
 const Footer = () => {
@@ -7,7 +6,7 @@ const Footer = () => {
     <footer className=" tracking-wide bg-sky-800 px-8 py-12 ">
       <div className="w-full mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-x-6 gap-y-10">
         <div>
-          <a href=''><img src={Logo} alt="logo" className='w-44' /></a>
+          <p className="text-white font-semibold text-lg relative max-sm:cursor-pointer">TSP Engineerig LTD</p>
 
           <ul className="mt-10 flex space-x-5">
             <li>
