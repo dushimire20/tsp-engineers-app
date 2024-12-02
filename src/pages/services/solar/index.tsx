@@ -1,5 +1,6 @@
 import React from 'react';
 import { SolarServices } from '@/data/index';
+import { Link } from 'react-router-dom';
 
 interface Props {}
 
@@ -12,12 +13,13 @@ const Solars = (props: Props) => {
         className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-4 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
       >
         {SolarServices.map((product, index) => (
-          <div
+          <Link
             key={index}
+            to={product.path} // Dynamic link based on product path
             className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl hover:border-sky-800 border-2"
           >
             {/* Use a dynamic link */}
-            <a href={` ${product.path.toLowerCase().replace(/\s+/g, '-')}`}>
+           
               <img
                 src={product.image}
                 alt="Product"
@@ -50,8 +52,8 @@ const Solars = (props: Props) => {
                   </div>
                 </div>
               </div>
-            </a>
-          </div>
+            
+          </Link>
         ))}
       </section>
     </section>
