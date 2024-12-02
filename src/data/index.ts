@@ -8,6 +8,11 @@ import Water from "@/assets/water-treatment.png";
 import Chemical from "@/assets/chemicals.png"
 import SolarPanels from "/src/assets/Solars/Solar-Panel.jpg"
 import SolarPumps from "/src/assets/Solars/solar-pumps--controls.jpg"
+import WH from "/src/assets/Solars/water-heaters.jpg";
+import DPS from "/src/assets/Solars/digital-power-solutions.jpg"
+import ESS from "/src/assets/Solars/energy-storage-systems.jpg"
+import I from "/src/assets/Solars/inverters.jpg"
+import A from "/src/assets/Solars/accessories_2.jpg"
 
 export const teamMembers = [
   {
@@ -121,7 +126,7 @@ export const SolarServices = [
     name: "Solar panels & Support Structures",
     discription: "High-efficiency solar panels and durable support structures for optimal solar energy harvesting.",
     oldPrice: "Price",
-    path:"/solar-panels",
+    path:"/solarPanels",
   },
 
   {
@@ -129,37 +134,37 @@ export const SolarServices = [
     name: "Solar pumps and controls",
     discription: "Solar-powered pumps and controllers for efficient and sustainable water management.",
     oldPrice: "Price",
-     path:"/solar-pumps--controls"
+     path:"/solarControls"
   },
   {
-    image: "/src/assets/Solars/water-heaters.jpg",
+    image: WH,
     name: "Water Heaters",
     discription: "High-performance solar water heaters for reliable and cost-effective hot water supply.",
     oldPrice: "Price",
-    path:"/water-heaters"   
+    path:"/waterHeaters"   
     
   },
 
   {
-    image: "/src/assets/Solars/digital-power-solutions.jpg",
+    image: DPS,
     name: "Digital power solutions",
     discription: "Innovative digital power solutions for efficient and reliable energy management.",
     oldPrice: "Price",
-    path:"/digital-power-solutions"   
+    path:"/digitalSolutions"   
     
   },
 
   {
-    image: "/src/assets/Solars/energy-storage-systems.jpg",
+    image: ESS,
     name: "Energy storage systems",
     discription: "Advanced energy storage systems for reliable and sustainable power supply.",
     oldPrice: "Price",
-    path:"/energy-storage-systems"   
+    path:"/energySystems"   
     
   },
 
   {
-    image: "/src/assets/Solars/inverters.jpg",
+    image: I,
     name: "Inverters",
     discription: "High-efficiency inverters for seamless conversion of DC power to AC power.",
     oldPrice: "Price",
@@ -168,11 +173,11 @@ export const SolarServices = [
   },
 
   {
-    image: "/src/assets/Solars/accessories_2.jpg",
+    image: A,
     name: "accessories",
     discription: "Essential accessories and components for seamless solar energy systems.",
     oldPrice: "Price",
-    path:"/solar/Accessories"   
+    path:"/accessories"   
     
   },
 
