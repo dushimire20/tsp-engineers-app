@@ -82,7 +82,7 @@ export const menuData = [
     path: "/service/solar",
     dropdown: [
       { name: "Solar Solutions", path: "/service/solar" },
-      { name: "Swimming Pools", path: "/service/swimming-pool" },
+      { name: "Swimming Pools", path: "/service/swimmingPool" },
       { name: "Water Treatments", path: "/service/water-treatments" },
       { name: "General Machinery", path: "/service/machinery" },
       { name: "Controllers & Digital Solutions", path: "/service/controllers" },
