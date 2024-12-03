@@ -4,8 +4,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className=" tracking-wide bg-sky-800 px-8 py-12 ">
-      <div className=" justify-center items-center  w-full mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-x-6 gap-y-10">
-        <div className="">
+      <div className="w-full mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-x-6 gap-y-10">
+        <div>
           <p className="text-white font-semibold text-lg relative max-sm:cursor-pointer">TSP Engineerig LTD</p>
 
           <ul className="mt-10 flex space-x-5">
@@ -79,8 +79,8 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* <div>
-          <h4 className="text-white font-semibold text-lg relative max-sm:cursor-pointer">Platforms <svg
+        <div>
+          <h4 className="text-white font-semibold text-lg relative max-sm:cursor-pointer"> Contact <svg
             xmlns="http://www.w3.org/2000/svg" width="16px" height="16px"
             className="sm:hidden absolute right-0 top-1 fill-[#d6d6d6]" viewBox="0 0 24 24">
             <path
@@ -90,19 +90,19 @@ const Footer = () => {
           </h4>
           <ul className="space-y-5 mt-6 max-sm:hidden">
             <li>
-              <a href='' className='hover:text-white text-gray-300 text-sm'>Hubspot</a>
+              <a href='' className='hover:text-white text-gray-300 text-sm'>+250 788 774 648</a>
             </li>
             <li>
-              <a href='' className='hover:text-white text-gray-300 text-sm'>Integration Services</a>
+              <a href='' className='hover:text-white text-gray-300 text-sm'>Kigali - Muhima</a>
             </li>
             <li>
-              <a href='' className='hover:text-white text-gray-300 text-sm'>Marketing Glossar</a>
+              <a href='' className='hover:text-white text-gray-300 text-sm'>KN1-RD6</a>
             </li>
             <li>
-              <a href='' className='hover:text-white text-gray-300 text-sm'>UIPath</a>
+              <a href='' className='hover:text-white text-gray-300 text-sm'>Kigali - Rwanda</a>
             </li>
           </ul>
-        </div> */}
+        </div>
 
         <div>
           <h4 className="text-white font-semibold text-lg relative max-sm:cursor-pointer">Company <svg

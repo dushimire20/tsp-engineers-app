@@ -13,26 +13,13 @@ import DPS from "/src/assets/Solars/digital-power-solutions.jpg"
 import ESS from "/src/assets/Solars/energy-storage-systems.jpg"
 import I from "/src/assets/Solars/inverters.jpg"
 import A from "/src/assets/Solars/accessories_2.jpg"
-
-export const teamMembers = [
-  {
-    name: "Derin",
-    role: "CEO",
-    image: Team1,
-    feedback:
-      "Mundi Center has been a game-changer for my business. Since moving my shop here, I've seen a significant increase in foot traffic and sales. The location is great, the facilities are top-notch, and the management team is always responsive and supportive. I couldn't be happier with my decision to join this community!",
-  },
-  {
-    name: "Gigi",
-    role: "Business Manager",
-    image: Team1,
-    feedback:
-      "Mundi Center has been a game-changer for my business. Since moving my shop here, I've seen a significant increase in foot traffic and sales. The location is great, the facilities are top-notch, and the management team is always responsive and supportive. I couldn't be happier with my decision to join this community!",
-  },
-
-
-  ];
-
+// pools
+import P1 from "@/assets/pool/dx-filters.jpg"
+import P2 from "@/assets/pool/pumps.jpg"
+import P3 from "@/assets/pool/pool-chemicals_1035258276.jpg"
+import P4 from "@/assets/pool/accessories_1.jpg"
+import P5 from "@/assets/pool/spas.jpg"
+import P6 from "@/assets/pool/fountain.jpg"
   export const products = [
     {
       name: "Solar Solutions",
@@ -46,6 +33,7 @@ export const teamMembers = [
       description:
         "Dayliff,, Pedrollo, Grundfos, Davey, DAB, Rovatti, Pompe, Flowserve",
       image: Desktop,
+      path:"service/water-pumps"
     },
     
     {
@@ -53,30 +41,35 @@ export const teamMembers = [
       description:
         "DG-P, DG Diesel Generators,  DG Multi-4, DGW Welding Generators, DGY Generators,  DGC Generators,DGP Generators,Generators Accessories, DLV/DLA Engines,  DLY Diesel Engines,  Kohler KD Diesel Engines ...",
       image: Machinery,
+      path: "service/machinery"
     },
     {
       name: "Controllers and Digital Solutions",
       description:
         "A comprehensive product showcase for digital tools and heavy machinery.",
       image: Controllers,
+      path: "service/controllers"
     },
     {
       name: "Swimming Pools",
       description:
         "Filters Pumps Chemicals & Chlorinators Accessories Spas & Saunas Fountain Nozzles",
       image: Swimming,
+      path:"service/swimming-pool"
     },
     {
       name: "Water Treatment",
       description:
         "Domestic Treatment Reverse Osmosis & UV Water Treatment Plants Air Blowers Filters & Softeners Chemical Dosage Water Treatment Media",
       image: Water,
+      path: "service/water-treatment"
     },
     {
       name: "Chemicals",
       description:
         "A comprehensive product showcase for Chemical tools.",
       image: Chemical,
+      path: "services/chemicals"
     },
   ]
 
@@ -165,7 +158,7 @@ export const SolarServices = [
 
   {
     image: I,
-    name: "Inverters",
+    name: "Inverters/ Backup Systems",
     discription: "High-efficiency inverters for seamless conversion of DC power to AC power.",
     oldPrice: "Price",
     path:"/inverters"   
@@ -177,10 +170,66 @@ export const SolarServices = [
     name: "accessories",
     discription: "Essential accessories and components for seamless solar energy systems.",
     oldPrice: "Price",
-    path:"/accessories"   
+    path:"/solarAccessories"   
     
   },
 
   
   
 ]
+
+
+export const swimmingPool = [
+  {
+    image: P1,
+    name: "Filters",
+    discription: "Our high-performance pool filters efficiently remove debris and impurities, ensuring a pristine swimming experience.",
+    oldPrice: "Price",
+    path:"/solarPanels",
+  },
+
+  {
+    image: P2,
+    name: "Pumps",
+    discription: "Effortless water flow, guaranteed. Our reliable pumps deliver powerful and efficient water solutions for diverse applications, from residential to industrial.",
+    oldPrice: "Price",
+     path:"/solarControls"
+  },
+  {
+    image: P3,
+    name: "Chemicals & Chlorinators",
+    discription: "Keep your pool water sparkling clean and safe. Our high-quality chemicals and chlorinators maintain optimal water balance and eliminate harmful bacteria.",
+    oldPrice: "Price",
+    path:"/waterHeaters"   
+    
+  },
+
+  {
+    image: P4,
+    name: "Accessories",
+    discription: "Upgrade your pool experience. Our range of accessories, from pool covers to cleaning tools, enhance your pool's performance and your enjoyment.",
+    oldPrice: "Price",
+    path:"/digitalSolutions"   
+    
+  },
+
+  {
+    image: P5,
+    name: "Spas & Saunas",
+    discription: "Indulge in ultimate relaxation. Our luxurious spas and saunas offer a serene escape, rejuvenating your mind and body.",
+    oldPrice: "Price",
+    path:"/energySystems"   
+    
+  },
+
+  {
+    image: P6,
+    name: "Fauntain Nozzles",
+    discription: "Elevate your outdoor space with our stylish and functional fountain nozzles. Create mesmerizing water displays that add beauty and tranquility to your garden or landscape.",
+    oldPrice: "Price",
+    path:"/inverters"   
+    
+  },  
+  
+]
+
