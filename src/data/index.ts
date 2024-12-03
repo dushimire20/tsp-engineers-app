@@ -1,4 +1,3 @@
-import Team1 from "@/assets/Team1.png";
 import Desktop from "@/assets/Desktop.png";
 import Solar from "@/assets/Solar.png"
 import Machinery from "@/assets/general-machinery.png"
@@ -33,7 +32,7 @@ import P6 from "@/assets/pool/fountain.jpg"
       description:
         "Dayliff,, Pedrollo, Grundfos, Davey, DAB, Rovatti, Pompe, Flowserve",
       image: Desktop,
-      path:"service/water-pumps"
+      path:"/service/waterPumps"
     },
     
     {
@@ -55,7 +54,7 @@ import P6 from "@/assets/pool/fountain.jpg"
       description:
         "Filters Pumps Chemicals & Chlorinators Accessories Spas & Saunas Fountain Nozzles",
       image: Swimming,
-      path:"service/swimming-pool"
+      path:"service/swimmingPool"
     },
     {
       name: "Water Treatment",
@@ -80,6 +79,7 @@ export const menuData = [
   {
     name: "Product & Solutions",
     path: "/service/solar",
+    disabled:true,
     dropdown: [
       { name: "Solar Solutions", path: "/service/solar" },
       { name: "Swimming Pools", path: "/service/swimmingPool" },
@@ -91,18 +91,15 @@ export const menuData = [
     ],
   },
   {
-    name: "Projects",
-    path: "/projects",
-    dropdown: [
-      { name: "Ongoing", path: "/project/ongoing" },
-      { name: "Completed", path: "/project/completed" },
-    ],
+    name: "Partners",
+    path: "/partners",
   },
  
   { name: "About Us", path: "/about" },
   {
     name: "Download",
     path: "/download",
+    disabled:true,
     dropdown: [
       { name: "Catalogue", path: "/catalogue" },
       { name: "Document", path: "/document" },

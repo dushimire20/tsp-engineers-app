@@ -15,6 +15,7 @@ import SolarAccessories from './pages/services/solar/solarAccessories';
 import EnergySystems from './pages/services/solar/energySystems';
 import Inverters from './pages/services/solar/inverters';
 import Pools from './pages/services/pools';
+import Partners from './pages/partners';
 
 
 const App: React.FC = () => {
@@ -29,6 +30,7 @@ const App: React.FC = () => {
           <Route path="/catalogue" element ={<Catalogue/>} />
           <Route path="/document" element={<Document/>} />
           <Route path="/gallery" element = {<Gallery/>} />
+          <Route path="/partners" element={<Partners/>} />
           <Route path="/service/solar" element={<Solars/>} />
           <Route path="/solarPanels" element={<SolarPanels />} />
           <Route path="/waterHeaters" element={<WaterHeaters />} />

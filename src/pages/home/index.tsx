@@ -1,21 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import HomeVideo from "@/assets/HomeVideo.mp4";
-import {  products } from "@/data/index";
-import M1 from "@/assets/gallery/Nzove İçme Suyu Arıtma Projesi.jpg"
-import M2 from "@/assets/gallery/Gihira I Rwanda İçme Suyu Arıtma Tesisi (Rehabilitasyon).jpg"
-import Team from "@/assets/Pteam.png"
+import { products } from "@/data/index";
+import M1 from "@/assets/gallery/Nzove İçme Suyu Arıtma Projesi.jpg";
+import M2 from "@/assets/gallery/Gihira I Rwanda İçme Suyu Arıtma Tesisi (Rehabilitasyon).jpg";
+import Team from "@/assets/Pteam.png";
 
 import ProjectGrid from "@/components/ProjectGrid";
 
 const Home = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const heroTextVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
 
-  
+  const statsVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, staggerChildren: 0.3 } },
+  };
 
-
+  const gridVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, staggerChildren: 0.2 } },
+  };
 
   return (
     <section className="w-full">
@@ -35,8 +44,13 @@ const Home = () => {
             className="h-full w-full object-cover"
           />
         </video>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-black bg-opacity-50 p-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
+        <motion.div
+          className="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-black bg-opacity-50 p-4"
+          initial="hidden"
+          animate="visible"
+          variants={heroTextVariants}
+        >
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Welcome to Our Platform
           </h1>
           <p className="text-lg md:text-xl mb-6">
@@ -48,7 +62,7 @@ const Home = () => {
           >
             Get Started
           </button>
-        </div>
+        </motion.div>
         <div className="absolute bottom-8 w-full flex justify-center">
           <button
             onClick={() => window.scrollTo({ top: 800, behavior: "smooth" })}
@@ -59,87 +73,81 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="py-32 md: mt-16 relative">
+      {/* About Section */}
+      <motion.section
+        className="py-32 md:mt-16 relative"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={statsVariants}
+      >
         <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-          <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
-            <div className="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
-              <div className="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
-                <img
-                  className=" rounded-xl object-cover"
-                  src={M2}
-                  alt="about Us image"
-                />
-              </div>
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
+            <motion.div className="grid sm:grid-cols-2 gap-6">
               <img
-                className="sm:ml-0 ml-auto rounded-xl object-cover"
+                className="rounded-xl object-cover"
+                src={M2}
+                alt="about Us image"
+              />
+              <img
+                className="rounded-xl object-cover"
                 src={M1}
                 alt="about Us image"
               />
-            </div>
-            <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
-              <div className="w-full flex-col justify-center items-start gap-8 flex">
-                <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                  <h2 className="text-sky-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                    Empowering Each Other to Succeed
-                  </h2>
-                  <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                    Every project we've undertaken has been a collaborative
-                    effort, where every person involved has left their mark.
-                    Together, we've not only constructed constructed efficient
-                    systems but also built enduring partnerships that define our
-                    success story.
-                  </p>
-                </div>
-                <div className="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
-                  <div className="flex-col justify-start items-start inline-flex">
-                    <h3 className="text-sky-900 text-4xl font-bold font-manrope leading-normal">
-                      15+
-                    </h3>
-                    <h6 className="text-gray-500 text-base font-normal leading-relaxed">
-                      Years of Experience
-                    </h6>
-                  </div>
-                  <div className="flex-col justify-start items-start inline-flex">
-                    <h4 className="text-sky-800 text-4xl font-bold font-manrope leading-normal">
-                      50+
-                    </h4>
-                    <h6 className="text-gray-500 text-base font-normal leading-relaxed">
-                      Successful Projects
-                    </h6>
-                  </div>
-                  <div className="flex-col justify-start items-start inline-flex">
-                    <h4 className="text-sky-900 text-4xl font-bold font-manrope leading-normal">
-                      52+
-                    </h4>
-                    <h6 className="text-gray-500 text-base font-normal leading-relaxed">
-                      Happy Clients
-                    </h6>
-                  </div>
-                </div>
+            </motion.div>
+            <motion.div className="flex flex-col gap-10">
+              <div className="flex flex-col gap-3">
+                <h2 className="text-sky-900 text-4xl font-bold leading-normal">
+                  Empowering Each Other to Succeed
+                </h2>
+                <p className="text-gray-500 text-base leading-relaxed">
+                  Every project we've undertaken has been a collaborative
+                  effort, where every person involved has left their mark.
+                  Together, we've not only constructed efficient systems but also built enduring partnerships that define our
+                  success story.
+                </p>
               </div>
-              <button className="sm:w-fit w-full px-3.5 py-2 bg-sky-800 hover:bg-sky-600 transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
-                <span className="px-1.5 text-white text-sm font-medium leading-6">
-                  Read More
-                </span>
+              <div className="flex gap-10">
+                <motion.div variants={statsVariants}>
+                  <h3 className="text-sky-900 text-4xl font-bold">15+</h3>
+                  <p className="text-gray-500">Years of Experience</p>
+                </motion.div>
+                <motion.div variants={statsVariants}>
+                  <h3 className="text-sky-900 text-4xl font-bold">50+</h3>
+                  <p className="text-gray-500">Successful Projects</p>
+                </motion.div>
+                <motion.div variants={statsVariants}>
+                  <h3 className="text-sky-900 text-4xl font-bold">52+</h3>
+                  <p className="text-gray-500">Happy Clients</p>
+                </motion.div>
+              </div>
+              <button className="px-6 py-3 bg-sky-800 hover:bg-sky-600 rounded-lg text-white">
+                Read More
               </button>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
+      {/* Projects Section */}
       <section
-      className="py-24 bg-sky-800 "
-      >    
-      <p className="font-manrope text-5xl text-white font-bold leading-[4rem] mb-7 text-center py-6">
-        Our Product & Solutions
+       className="py-24 bg-sky-800"
         
-        </p>   
-        <ProjectGrid products={products} />    
-        
-        
+      >
+        <h2 className="text-white text-5xl font-bold text-center mb-7">
+          Our Products & Solutions
+        </h2>
+        <ProjectGrid products={products} />
       </section>
 
-      <section className="py-24 ">
+      {/* Team Section */}
+      <motion.section
+        className="py-16"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={gridVariants}
+      >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center flex-col lg:flex-row md:mt-20">
                 <div className="w-full lg:w-1/2">
@@ -170,10 +178,13 @@ const Home = () => {
                 </div>
             </div>
         </div>
-    </section>
-                                            
+      </motion.section>
     </section>
   );
 };
 
 export default Home;
+
+
+
+

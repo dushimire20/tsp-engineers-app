@@ -1,5 +1,6 @@
-import React from 'react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+
 
 interface Product {
   id: number;
@@ -10,10 +11,19 @@ interface Product {
 }
 
 const ProductGrid = ({ products }: { products: Product[] }) => {
+  const gridVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, staggerChildren: 0.2 } },
+  };
   return (
-    <section
+    <motion.section
       id="Products"
       className="w-fit mx-auto flex flex-wrap items-center justify-center  gap-y-20 gap-x-14 mt-10 mb-5 "
+     
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={gridVariants}
       
     >
       {products.map((product) => (
@@ -46,7 +56,7 @@ const ProductGrid = ({ products }: { products: Product[] }) => {
           </div>
         </Link>
       ))}
-    </section>
+    </motion.section>
   );
 };
 

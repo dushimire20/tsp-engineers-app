@@ -1,17 +1,14 @@
 import { useState, useEffect } from "react";
-import { NavLink, useNavigate, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { menuData } from "@/data/index";
-import Logo from "@/assets/Logo.png";
-
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(null); // Track which dropdown is open
+  const [openDropdown, setOpenDropdown] = useState(null); // Track open dropdown (both desktop and mobile)
   const location = useLocation();
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-30 w-full border-b  ${
+      className={`fixed top-0 z-30 w-full border-b ${
         isHomePage
           ? isScrolled
             ? "bg-sky-800"
@@ -42,8 +39,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <p className="h-6 w-auto text-secondary-200 font-bold font-inter text-lg">
             TSP Engineering Ltd
-            {/* <img src={Logo} className=" h-16 w-auto text-white" /> */}
-           </p>
+          </p>
 
           <div className="flex items-center gap-4">
             {/* Mobile Menu Button */}
@@ -63,26 +59,13 @@ const Navbar = () => {
               to="/sign-in"
               className="flex items-center gap-3 text-secondary-200 hover:text-sky-600 transition-all"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                />
-              </svg>
+              <MagnifyingGlassIcon className="h-6 w-6" />
               <span className="hidden md:block text-sm">Sign In</span>
             </NavLink>
           </div>
         </div>
 
-        {/* Navigation Links */}
+        {/* Navigation Links for Desktop */}
         <div className="hidden md:flex items-center justify-between mt-4 border-t border-gray-200 py-2">
           <div className="flex gap-8">
             {menuData.map((menuItem, index) => (
@@ -102,9 +85,14 @@ const Navbar = () => {
                         <li
                           key={idx}
                           className="hover:bg-gray-100 hover:text-primary-100 rounded-2xl p-2 cursor-pointer"
-                          onClick={() => navigate(item.path)}
                         >
-                          {item.name}
+                          <NavLink
+                            to={item.path}
+                            className="block"
+                            onClick={() => setOpenDropdown(null)}
+                          >
+                            {item.name}
+                          </NavLink>
                         </li>
                       ))}
                     </ul>
@@ -119,6 +107,52 @@ const Navbar = () => {
             <MagnifyingGlassIcon className="h-5 w-5" />
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden mt-4 border-t border-gray-200 py-4 bg-sky-800">
+            <ul className="space-y-4 text-white">
+              {menuData.map((menuItem, index) => (
+                <li key={index} className="relative">
+                  <NavLink
+                    className="flex justify-between items-center px-4 py-2 hover:bg-sky-700 rounded-lg cursor-pointer"
+                    to={menuItem.path}
+                    onClick={() =>
+                      setOpenDropdown(
+                        openDropdown === menuItem.name ? null : menuItem.name
+                      )
+                    }
+                  >
+                    <span>{menuItem.name}</span>
+                    {menuItem.dropdown && (
+                      <span>
+                        {openDropdown === menuItem.name ? "▲" : "▼"}
+                      </span>
+                    )}
+                  </NavLink>
+                  {menuItem.dropdown && openDropdown === menuItem.name && (
+                    <ul className="mt-2 space-y-2 pl-8">
+                      {menuItem.dropdown.map((item, idx) => (
+                        <li key={idx}>
+                          <NavLink
+                            to={item.path}
+                            className="text-sm hover:bg-gray-700 p-2 rounded-lg block"
+                            onClick={() => {
+                              setIsMenuOpen(false);
+                              setOpenDropdown(null);
+                            }}
+                          >
+                            {item.name}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </nav>
   );
