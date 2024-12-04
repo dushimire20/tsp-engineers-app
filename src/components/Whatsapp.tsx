@@ -6,7 +6,7 @@ type Props = {};
 const Whatsapp = (props: Props) => {
   const openWhatsAppChat = () => {
     // Replace the number with your WhatsApp number
-    const phoneNumber = "++250 788 774 648"; 
+    const phoneNumber = "+250788774648"; 
     const message = encodeURIComponent("Hello, I would like to chat!");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, "_blank");
