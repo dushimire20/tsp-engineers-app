@@ -3,6 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { menuData } from "@/data/index";
+import logo from "@/assets/400JpgdpiLogo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,9 +38,14 @@ const Navbar = () => {
     >
       <div className="mx-auto w-full max-w-7xl px-6 py-3">
         <div className="flex items-center justify-between">
-          <p className="h-6 w-auto text-secondary-200 font-bold font-inter text-lg">
-            TSP Engineering Ltd
-          </p>
+          {/* Logo */}
+          <div className="bg-white p-2 rounded overflow-hidden">
+            <img
+              src={logo}
+              alt="TSP Engineering Ltd Logo"
+              className="h-10 w-auto object-cover"
+            />
+          </div>
 
           <div className="flex items-center gap-4">
             {/* Mobile Menu Button */}

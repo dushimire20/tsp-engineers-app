@@ -9,15 +9,51 @@ import {
   FaTwitter,
   FaTelegram,
 } from "react-icons/fa";
-import TSP from "@/assets/TSP-Logo.png";
+import TSP from "@/assets/400JpgdpiLogo.png";
 import { FaFacebook } from "react-icons/fa6";
 
 const ContactUs: React.FC = () => {
   return (
     <div className="flex flex-wrap bg-white py-24 w-5/6 mx-auto md:mt-20 font-inter space-y-12 md:space-y-0">
       {/* Centre Section */}
+      
+
+      {/* Montenegro and Rwanda Branches */}
+      <div className="w-full lg:w-1/3 mb-6 lg:mb-0 space-y-8">
+        {/* <div>
+          <h2 className="text-xl font-bold mb-4">MONTENEGRO OFFICE</h2>
+          <p className="flex items-start">
+            <FaMapMarkerAlt className="text-sky-500 mr-2 mt-1" />
+            Hercegovačka 60 Centar Podgorica Montenegro
+          </p>
+        </div> */}
+
+        <div>
+          <h2 className="text-xl font-bold mb-4">RWANDA BRANCH</h2>
+          <img src={TSP} alt="TSP Logo" className="h-24 mb-4" />
+          <p className="mb-4">
+            <span className="font-semibold">Name:</span> Elvin Fabrice MUHOZA
+          </p>
+          <p className="mb-4 flex items-start">
+            <FaPhone className="text-sky-500 mr-2 mt-1" />
+            +250 788 774 648
+          </p>
+          <p className="mb-4 flex items-start">
+          <FaEnvelope className="text-sky-800 mr-2 mt-1" />
+          fmuhoza@tspengineeringltd.com <br />
+          tspengineering@gmail.com <br />
+        </p>
+          <p className="mb-4 flex items-start">
+            <FaMapMarkerAlt className="text-sky-500 mr-2 mt-1" />
+            Kigali - Muhima
+          </p>
+          <p>KN1-RD6</p>
+          <p>Kigali - Rwanda</p>
+        </div>
+      </div>
+
       <div className="w-full lg:w-1/3 mb-6 lg:mb-0 space-y-6">
-        <h2 className="text-xl font-bold mb-4">CENTRE</h2>
+        <h2 className="text-xl font-bold mb-4">LOGIC AUTOMATION</h2>
         <p className="mb-4 flex items-start">
           <FaMapMarkerAlt className="text-sky-800 mr-2 mt-1" />
           Assembly District Cemal Gursel Street No: 24/A Sancaktepe/Istanbul
@@ -55,34 +91,7 @@ const ContactUs: React.FC = () => {
         </div>
       </div>
 
-      {/* Montenegro and Rwanda Branches */}
-      <div className="w-full lg:w-1/3 mb-6 lg:mb-0 space-y-8">
-        <div>
-          <h2 className="text-xl font-bold mb-4">MONTENEGRO OFFICE</h2>
-          <p className="flex items-start">
-            <FaMapMarkerAlt className="text-sky-500 mr-2 mt-1" />
-            Hercegovačka 60 Centar Podgorica Montenegro
-          </p>
-        </div>
 
-        <div>
-          <h2 className="text-xl font-bold mb-4">RWANDA BRANCH</h2>
-          <img src={TSP} alt="TSP Logo" className="h-24 mb-4" />
-          <p className="mb-4">
-            <span className="font-semibold">Name:</span> Elvin Fabrize MOHAZA
-          </p>
-          <p className="mb-4 flex items-start">
-            <FaPhone className="text-sky-500 mr-2 mt-1" />
-            +250 788 774 648
-          </p>
-          <p className="mb-4 flex items-start">
-            <FaMapMarkerAlt className="text-sky-500 mr-2 mt-1" />
-            Kigali - Muhima
-          </p>
-          <p>KN1-RD6</p>
-          <p>Kigali - Rwanda</p>
-        </div>
-      </div>
 
       {/* Contact Form */}
       <div className="w-full lg:w-1/3 space-y-8">

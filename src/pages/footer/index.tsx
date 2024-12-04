@@ -1,6 +1,5 @@
-import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import IM1 from "@/assets/Logo.png";
+import IM1 from "@/assets/400JpgdpiLogo.png";
 
 const Footer = () => {
   return (
@@ -15,7 +14,10 @@ const Footer = () => {
               title="TSP Engineering LTD"
               className="inline-flex items-center"
             >
-              <img src={IM1} alt="TSP Engineering Logo" className="h-28 w-auto" />
+             <div className="bg-white inline-block p-2">
+  <img src={IM1} alt="TSP Engineering Logo" className="h-10 w-auto" />
+</div>
+
             </a>
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm">
