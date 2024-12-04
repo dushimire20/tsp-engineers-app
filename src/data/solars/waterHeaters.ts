@@ -28,8 +28,8 @@ export const waterHeaters = [
 
     {
         image: W3,
-        name: "Solar-panel/dayliff-solar-structure",
-        description: "DAYLIFF CSW pumped circulation hot water systems are applicable in centralised distribution installations where the tank is mounted remotely from the solar collectors instead of the integral thermosyphon alternative. They can be used in small scale domestic systems and are also particularly applicable for larger systems installed in institutions like schools, hotels and hospitals",
+        name: "Solar-panel/solar-structure",
+        description: "CSW pumped circulation hot water systems are applicable in centralised distribution installations where the tank is mounted remotely from the solar collectors instead of the integral thermosyphon alternative. They can be used in small scale domestic systems and are also particularly applicable for larger systems installed in institutions like schools, hotels and hospitals",
         oldPrice: "Price",
         moreDescription:"More",
 
@@ -55,8 +55,8 @@ export const waterHeaters = [
 
     {
         image: W6,
-        name: "Dayliff HPW Heat Pump",
-        description: "Dayliff HPW Heat Pump Hot Water Systems are designed for all domestic water heating applications that utilise the high efficiency benefits of heat pump technology. The integral systems combine a hot water storage tank with an efficient heat pump that generates heat from ambient air by utilising the natural heat generating phenomenon of the gas evaporation/condensation cycle. This is transferred to the stored water by circulation through a coil type heat exchanger in the tank. Tank construction is carbon steel with internal enamel coating and a magnesium anode is fitted for cathodic protection against corrosion. The tank is lined with high grade thermal insulation for heat retention.",
+        name: "HPW Heat Pump",
+        description: "HPW Heat Pump Hot Water Systems are designed for all domestic water heating applications that utilise the high efficiency benefits of heat pump technology. The integral systems combine a hot water storage tank with an efficient heat pump that generates heat from ambient air by utilising the natural heat generating phenomenon of the gas evaporation/condensation cycle. This is transferred to the stored water by circulation through a coil type heat exchanger in the tank. Tank construction is carbon steel with internal enamel coating and a magnesium anode is fitted for cathodic protection against corrosion. The tank is lined with high grade thermal insulation for heat retention.",
         oldPrice: "Price",
         moreDescription:"More",
         
