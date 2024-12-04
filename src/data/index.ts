@@ -98,7 +98,7 @@ export const menuData = [
   { name: "About Us", path: "/about" },
   {
     name: "Download",
-    path: "/",
+    path: "/catalogue",
     disabled:true,
     dropdown: [
       { name: "Catalogue", path: "/catalogue" },
