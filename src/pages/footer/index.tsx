@@ -19,12 +19,12 @@ const Footer = () => {
             </a>
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
+              Enhance customer value and improve the well-being, safety,
+                comfort, and quality of life for communities by consistently delivering
+                professional services, cost-effective solutions, and premium products.
               </p>
               <p className="mt-4 text-sm">
-                Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo.
+              Delivering high-quality construction services and supplying top-tier materials from trusted manufacturers.
               </p>
             </div>
           </div>
@@ -46,12 +46,12 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <FaEnvelope className="text-white" />
               <a
-                href="mailto:info@lorem.mail"
+                href="mailto:tspenginneringltd@gmail.com"
                 aria-label="Our email"
                 title="Our email"
                 className="transition-colors duration-300 text-white hover:text-sky-100"
               >
-                info@lorem.mail
+                tspenginneringltd@gmail.com
               </a>
             </div>
             <div className="flex items-center space-x-3">
