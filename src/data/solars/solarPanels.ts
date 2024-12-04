@@ -6,7 +6,7 @@ import S3  from "/src/assets/Solars/Solar-panel/suntower.jpg";
 export const solarPanels = [
     {
         image: S1,
-        name: "Solar-panel/dayliff-solar-structure",
+        name: "Solar-panel/solar-structure",
         description: "High-quality solar panels and robust solar support structures for reliable and efficient solar energy harvesting.",
         oldPrice: "Price",
         moreDescription:"More",
@@ -15,7 +15,7 @@ export const solarPanels = [
 
     {
         image: S2,
-        name: "Solar-panel/dayliff-solar-structure",
+        name: "Solar-panel/solar-structure",
         description: "High-quality solar panels and robust solar support structures for reliable and efficient solar energy harvesting.",
         oldPrice: "Price",
         moreDescription:"More",
@@ -24,7 +24,7 @@ export const solarPanels = [
 
     {
         image: S3,
-        name: "Solar-panel/dayliff-solar-structure",
+        name: "Solar-panel/solar-structure",
         description: "High-quality solar panels and robust solar support structures for reliable and efficient solar energy harvesting.",
         oldPrice: "Price",
         moreDescription:"More",
