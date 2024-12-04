@@ -58,7 +58,7 @@ export const solarPumps = [
     {
         image: S5,
         name: "DSD Solar Kit",
-        description: "Solar pumping is now firmly established as an ideal solution for many water supply applications, AC motor pumps being widely used together with DC/AC inverters enabling hybrid PV solar/AC mains supply operation. The Dayliff DSD range of borehole pumps are established and reliable units and when combined with high specification Dayliff Sunverter controllers are efficient and cost effective applications of this technology.",
+        description: "Solar pumping is now firmly established as an ideal solution for many water supply applications, AC motor pumps being widely used together with DC/AC inverters enabling hybrid PV solar/AC mains supply operation. The  DSD range of borehole pumps are established and reliable units and when combined with high specification  Sunverter controllers are efficient and cost effective applications of this technology.",
         oldPrice: "Price",
         moreDescription:"More",
 
@@ -67,7 +67,7 @@ export const solarPumps = [
     {
         image: S6,
         name: "SUNFLO Solar Pumping Systems",
-        description: "Solar pumping is now firmly established as the technology for water supply in remote off-grid applications and also as the costs reduce increasingly for general pumping duties. Dayliff have been leaders in the technology since the birth of the industry and today offer a huge range of options for every solar pumping requirement imaginable. Particularly a range of competitive, high specification solar pumping systems have been developed for smaller scale applications which are based on robust submersible solar pumps specially designed for PV powered water supply from wells and boreholes.",
+        description: "Solar pumping is now firmly established as the technology for water supply in remote off-grid applications and also as the costs reduce increasingly for general pumping duties.  have been leaders in the technology since the birth of the industry and today offer a huge range of options for every solar pumping requirement imaginable. Particularly a range of competitive, high specification solar pumping systems have been developed for smaller scale applications which are based on robust submersible solar pumps specially designed for PV powered water supply from wells and boreholes.",
         oldPrice: "Price",
         moreDescription:"More",
         
@@ -76,7 +76,7 @@ export const solarPumps = [
     {
         image: S7,
         name: "SunBarrow",
-        description: "SunBarrow is an innovative accessory for small scale solar PV applications were mobility and security are important requirements. The unit includes a wheel mounted enclosure where batteries and accessories can be stored topped with a hinged platform that opens out for PV module mounting. The SunBarrow is available in two versions, a 0.6kW unit consisting of 3No. 200W Dayliff polycrystalline solar modules and a 1.0kW unit consisting of 5No 200W Dayliff polycrystalline solar modules.",
+        description: "SunBarrow is an innovative accessory for small scale solar PV applications were mobility and security are important requirements. The unit includes a wheel mounted enclosure where batteries and accessories can be stored topped with a hinged platform that opens out for PV module mounting. The SunBarrow is available in two versions, a 0.6kW unit consisting of 3No. 200W    polycrystalline solar modules and a 1.0kW unit consisting of 5No 200W    polycrystalline solar modules.",
         oldPrice: "Price",
         moreDescription:"More",
         
@@ -175,7 +175,7 @@ export const solarPumps = [
     {
         image: S18,
         name: "Sunverter 1",
-        description: "Recent innovations in DC/AC inverter technology have led to the development of solar solutions for large system outputs, which use standard AC motors controlled by specially designed inverters. Dayliff Sunverter systems are specifically designed for large system outputs using Dayliff DS submersible pumps or equivalent AC type submersible systems.",
+        description: "Recent innovations in DC/AC inverter technology have led to the development of solar solutions for large system outputs, which use standard AC motors controlled by specially designed inverters.    Sunverter systems are specifically designed for large system outputs using    DS submersible pumps or equivalent AC type submersible systems.",
         oldPrice: "Price",
         moreDescription:"More",
         

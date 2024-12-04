@@ -31,7 +31,7 @@ export const accessories = [
     {
         image: A3,
         name: "Pool Lighting",
-        description: "A swimming pool is not only a place to swim but also a landscape feature and night-time illumination is the most effective way to enhance its beauty. The DAYLIFF range of underwater lighting equipment has been specially selected for performance and quality and a wide range of options are available. Also available are related accessories including controllers, deck boxes and transformers.",
+        description: "A swimming pool is not only a place to swim but also a landscape feature and night-time illumination is the most effective way to enhance its beauty. The    range of underwater lighting equipment has been specially selected for performance and quality and a wide range of options are available. Also available are related accessories including controllers, deck boxes and transformers.",
         oldPrice: "Price",
         moreDescription:"More",
 
@@ -40,7 +40,7 @@ export const accessories = [
     {
         image: A4,
         name: "Pool Heating",
-        description: "A swimming pool is not only a place to swim but also a landscape feature and night-time illumination is the most effective way to enhance its beauty. The DAYLIFF range of underwater lighting equipment has been specially selected for performance and quality and a wide range of options are available. Also available are related accessories including controllers, deck boxes and transformers.",
+        description: "A swimming pool is not only a place to swim but also a landscape feature and night-time illumination is the most effective way to enhance its beauty. The    range of underwater lighting equipment has been specially selected for performance and quality and a wide range of options are available. Also available are related accessories including controllers, deck boxes and transformers.",
         oldPrice: "Price",
         moreDescription:"More",
 
@@ -49,7 +49,7 @@ export const accessories = [
     {
         image: A5,
         name: "Heat Pump",
-        description: "A cold swimming pool is an unused swimming pool and in most areas swimming pools are too cold to use throughout the year and therefore heating is required. A particularly effective solution is a Dayliff SP Heat Pump that utilises energy from two sources, heat from the ambient air and electric power to run a compressor in a reverse refrigeration cycle, the compression process extracting heat from the ambient air for transfer to the pool through a heat exchanger. All models are highly efficient operating at a Coefficient of Performance (COP), which is the ratio of energy output to direct energy input of up to six times for the SPS fixed output capacity units, depending on environmental conditions.",
+        description: "A cold swimming pool is an unused swimming pool and in most areas swimming pools are too cold to use throughout the year and therefore heating is required. A particularly effective solution is a    SP Heat Pump that utilises energy from two sources, heat from the ambient air and electric power to run a compressor in a reverse refrigeration cycle, the compression process extracting heat from the ambient air for transfer to the pool through a heat exchanger. All models are highly efficient operating at a Coefficient of Performance (COP), which is the ratio of energy output to direct energy input of up to six times for the SPS fixed output capacity units, depending on environmental conditions.",
         oldPrice: "Price",
         moreDescription:"More",
 
@@ -58,7 +58,7 @@ export const accessories = [
     {
         image: A6,
         name: "Pool Safety Net",
-        description: "Safety around swimming pools is a major concern, especially for residential sites where children and pets have access. DAYLIFF safety nets address this problem, the simple, easy to install system providing peace of mind to pool owners and operators.",
+        description: "Safety around swimming pools is a major concern, especially for residential sites where children and pets have access.    safety nets address this problem, the simple, easy to install system providing peace of mind to pool owners and operators.",
         oldPrice: "Price",
         moreDescription:"More",
 
