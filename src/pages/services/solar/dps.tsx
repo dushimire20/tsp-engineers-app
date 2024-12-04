@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { digitalPowerSolutions } from '@/data/solars/digitalpowerSolutions'; // Example data source
 import ProductGrid from "@/components/ProductGrid ";
 import ProductModal from "@/components/ProductModal ";
+import SectionTitle from '@/common/sectionTitle';
 
 type Props = {}
 
@@ -19,7 +20,11 @@ const DPS = (props: Props) => {
       setModalOpen(false);
     };
   return (
-    <div className="w-full py-56">
+    <div className="w-full py-56 text-center">
+      <SectionTitle 
+    
+      title={"Digital Power Solutions"} 
+      paragraph={''} />
       {/* Product Grid */}
       <ProductGrid products={digitalPowerSolutions} onProductClick={openModal} />
 
