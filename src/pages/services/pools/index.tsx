@@ -1,12 +1,17 @@
 import React from 'react';
 import { swimmingPool } from '@/data/index';
 import { Link } from 'react-router-dom';
+import SectionTitle from '@/common/sectionTitle';
 
 interface Props {}
 
 const Pools = (props: Props) => {
   return (
     <section className="w-full py-56">
+       <SectionTitle 
+    
+    title={"Swimming Pool Solutions"} 
+    paragraph={''} />
       {/* Grid Section */}
       <section
         id="Projects"

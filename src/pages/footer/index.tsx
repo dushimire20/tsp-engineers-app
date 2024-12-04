@@ -57,7 +57,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <FaMapMarkerAlt className="text-white" />
               <a
-                href="https://www.google.com/maps"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Our address"
@@ -74,7 +74,7 @@ const Footer = () => {
             <p className="text-base font-bold tracking-wide text-white">Social</p>
             <div className="flex items-center mt-2 space-x-3">
               <a
-                href="https://www.facebook.com"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-sky-100 transition"
@@ -83,7 +83,7 @@ const Footer = () => {
                 <FaFacebook size={24} />
               </a>
               <a
-                href="https://www.instagram.com"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-sky-100 transition"
@@ -92,7 +92,7 @@ const Footer = () => {
                 <FaInstagram size={24} />
               </a>
               <a
-                href="https://www.twitter.com"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-sky-100 transition"

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { solarPumps } from '@/data/solars/solarPumps'; // Example data source
 import ProductGrid from "@/components/ProductGrid ";
 import ProductModal from "@/components/ProductModal ";
+import SectionTitle from '@/common/sectionTitle';
 
 const SolarPumps = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -19,6 +20,10 @@ const SolarPumps = () => {
 
   return (
     <div className="w-full py-56">
+       <SectionTitle 
+    
+    title={"Solar Pump Solutions"} 
+    paragraph={''} />
       {/* Product Grid */}
       <ProductGrid products={solarPumps} onProductClick={openModal} />
 

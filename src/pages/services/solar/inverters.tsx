@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { inverters } from '@/data/solars/inverters'; // Example data source
 import ProductGrid from "@/components/ProductGrid ";
 import ProductModal from "@/components/ProductModal ";
+import SectionTitle from '@/common/sectionTitle';
 
 type Props = {}
 
@@ -20,6 +21,10 @@ const Inverters = (props: Props) => {
     };
   return (
     <div className="w-full py-56">
+       <SectionTitle 
+    
+    title={"Inverters"} 
+    paragraph={''} />
       {/* Product Grid */}
       <ProductGrid products={inverters} onProductClick={openModal} />
 
