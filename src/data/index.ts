@@ -1,76 +1,79 @@
-import Desktop from "@/assets/Desktop.png";
-import WaterTreatment from "@/assets/waterTreatments/cover.jpeg"
-import Machinery from "@/assets/general-machinery.png"
-import Controllers from "@/assets/controllers.png"
-import Swimming from "@/assets/swimming-pools.png";
-import Water from "@/assets/water-treatment.png";
-import Chemical from "@/assets/chemicals.png"
+import P1 from "@/assets/P1.jpg"
+import P2 from "@/assets/P2.jpg"
+import P3 from "@/assets/P3.jpg"
+import P4 from "@/assets/P4.jpg"
+import P5 from "@/assets/P5.jpg"
+import P6 from "@/assets/P6.jpg"
+import P7 from "@/assets/P7.jpg"
 
 
 
-  export const products = [
-    {
-      name: "Well Water Treatment",
-      description:
-        "water treatment systems may be applied in vessels where there is no potable water, ships, hotels, and living quarters. Sea water sources way vary according to region where water sources take place. ",
-      image: WaterTreatment,
-      path:"service/seaWaterTreatment"
-    },
-    {
-      name: "Water Pumps",
-      description:
-        "Dayliff,, Pedrollo, Grundfos, Davey, DAB, Rovatti, Pompe, Flowserve",
-      image: Desktop,
-      path:"/service/waterPumps"
-    },
-    
-    {
-      name: "General Machinery",
-      description:
-        "DG-P, DG Diesel Generators,  DG Multi-4, DGW Welding Generators, DGY Generators,  DGC Generators,DGP Generators,Generators Accessories, DLV/DLA Engines,  DLY Diesel Engines,  Kohler KD Diesel Engines ...",
-      image: Machinery,
-      path: "/service/grayWaterTreatment"
-    },
-    {
-      name: "Recycling and WasteWater Treatment",
-      description:
-        "A comprehensive product showcase for digital tools and heavy machinery.",
-      image: Controllers,
-      path: "service/controllers"
-    },
-    {
-      name: "Swimming Pools",
-      description:
-        "Filters Pumps Chemicals & Chlorinators Accessories Spas & Saunas Fountain Nozzles",
-      image: Swimming,
-      path:"service/swimmingPool"
-    },
-    {
-      name: "Water Treatment",
-      description:
-        "Domestic Treatment Reverse Osmosis & UV Water Treatment Plants Air Blowers Filters & Softeners Chemical Dosage Water Treatment Media",
-      image: Water,
-      path: "service/water-treatment"
-    },
-    {
-      name: "Chemicals",
-      description:
-        "A comprehensive product showcase for Chemical tools.",
-      image: Chemical,
-      path: "services/chemicals"
-    },
-  ]
 
-  // data/menuData.js
+export const products = [
+  {
+    name: "Well Water Treatment",
+    description:
+      "Well water purification systems are systems where the well is preferred as a source in places where there is no or insufficient mains water and the purification system is applied according to the raw water characteristics. Well waters vary in different regions, different provinces and countries. For example, while the salinity rate may be high in wells located in areas close to the sea, well water in different regions may contain iron, manganese, arsenic and similar elements depending on the content of the area where it is located.",
+    image: P1,
+    path: "/service/seaWaterTreatment"
+  },
+  {
+    name: "SeaWater Desalination",
+    description:
+      "Seawater purification systems can be applied to ships, boats, hotels, and sites where there is no clean water source. Seawater varies depending on the region where the source is located. For example, while the TDS value in the Marmara Sea is around 15,000-20,000 ppm, this value can reach 42,000 ppm for the Red Sea.",
+    image: P2,
+    path: "/service/waterDesalination"
+  },
+
+  {
+    name: "Grey Water Treatment",
+    description:
+      "In domestic wastewater, the water collected by the sewer system, the wastewater originating from sinks, bathtubs and showers, is called grey water. If the grey water line can be separated from the sewer line during construction, this water can be recovered with the purification systems that can be applied and can be reused in garden irrigation or reservoirs.",
+    image: P3,
+    path: "/service/grayWaterTreatment"
+  },
+  {
+    name: "Recycling and WasteWater Treatment",
+    description:
+      "Contaminated water originating from domestic and industrial use is called wastewater. Since the content of wastewater in domestic use is in a harmonious balance in terms of carbon, nitrogen and phosphorus, we can make the treated wastewater usable for garden and recreational area irrigation by applying physical and biological wastewater treatment systems and subsequent filtration and disinfection systems.",
+    image: P4,
+    path: "/service/waterRecycling"
+  },
+  {
+    name: "Surface Water Treatment",
+    description:
+      "Surface water treatment systems are the systems selected when streams, lakes, rivers and similar sources are used as sources. Since surface waters will vary with natural events such as rain, snow and the like, for the treatment of the source, the raw water characteristics should be examined seasonally and the treatment system should be selected according to the worst possible analysis value.",
+    image: P5,
+    path: "/service/surfaceWaterTreatment"
+  },
+  {
+    name: "Spring Water Treatment",
+    description:
+      "Spring waters are waters that are suitable for drinking in terms of minerals and pH and are bottled and offered as drinking water. However, spring waters may contain turbidity or bacteria, viruses and microorganisms due to physical contact before reaching the point of use and bottling. Therefore, before being supplied or offered as drinking water, we can check its compliance with drinking water standards according to analysis values ​​and recommend, produce and implement the necessary treatment system for unsuitable sources.",
+    image: P6,
+    path: "/service/springWaterTreatment"
+  },
+  {
+    name: "Rainwater Treatment",
+    description:
+      "In our world where clean water resources are decreasing, we can filter the rainwater collected from the roofs of domestic and industrial facilities and make it suitable for use in recreational areas, gardens or agricultural irrigation or reservoirs. If preferred, we can purify rainwater using different advanced purification technologies to make it drinking and utility water.",
+    image: P7,
+    path: "/service/rainwaterTreatment"
+  },
+
+
+]
+
+// data/menuData.js
 
 export const menuData = [
   { name: "Home", path: "/" },
   {
     name: "Product & Solutions",
     path: "/service/solar",
-    disabled:true,
+    disabled: true,
     dropdown: [
-      { name: "Sea Water Treatment", path: "/service/seaWaterTreatment" },
+      { name: "Well Water Treatment", path: "/service/seaWaterTreatment" },
       { name: "SeaWater Desalination", path: "/service/waterDesalination" },
       { name: "Grey Water Treatment Solutions", path: "/service/grayWaterTreatment" },
       { name: "Recycling and Waste water Treatment", path: "/service/waterRecycling" },
@@ -84,12 +87,12 @@ export const menuData = [
     name: "Partners",
     path: "/partners",
   },
- 
+
   { name: "About Us", path: "/about" },
   {
     name: "Download",
     path: "/catalogue",
-    disabled:true,
+    disabled: true,
     dropdown: [
       { name: "Catalogue", path: "/catalogue" },
       { name: "Document", path: "/document" },
