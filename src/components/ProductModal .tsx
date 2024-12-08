@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface Product {
   id: number;
@@ -13,7 +13,11 @@ interface ProductModalProps {
   product: Product | null;
 }
 
-const ProductModal: React.FC<ProductModalProps> = ({ isOpen, onClose, product }) => {
+const ProductModal: React.FC<ProductModalProps> = ({
+  isOpen,
+  onClose,
+  product,
+}) => {
   if (!isOpen || !product) return null;
 
   return (
@@ -21,11 +25,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ isOpen, onClose, product })
       <div className="bg-white w-full h-full flex">
         {/* Image Section */}
         <div className="w-1/2 h-full flex items-center justify-center bg-gray-100">
-          <img
-            src={product.image}
-            alt={product.name}
-            className="object-contain h-5/6"
-          />
+          <img src={product.image} alt={product.name} className="rounded-2xl" />
         </div>
         {/* Details Section */}
         <div className="w-1/2 h-full p-10 overflow-auto relative">

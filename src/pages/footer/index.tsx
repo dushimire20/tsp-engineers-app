@@ -1,5 +1,12 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import IM1 from "@/assets/400JpgdpiLogo.png";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
+import IM1 from "@/assets/LastEdit.png";
 
 const Footer = () => {
   return (
@@ -14,26 +21,33 @@ const Footer = () => {
               title="TSP Engineering LTD"
               className="inline-flex items-center"
             >
-             <div className="bg-white inline-block p-2">
-  <img src={IM1} alt="TSP Engineering Logo" className="h-10 w-auto" />
-</div>
-
+              <div className=" inline-block p-2">
+                <img
+                  src={IM1}
+                  alt="TSP Engineering Logo"
+                  className="h-[80px] w-auto"
+                />
+              </div>
             </a>
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm">
-              Enhance customer value and improve the well-being, safety,
-                comfort, and quality of life for communities by consistently delivering
-                professional services, cost-effective solutions, and premium products.
+                Enhance customer value and improve the well-being, safety,
+                comfort, and quality of life for communities by consistently
+                delivering professional services, cost-effective solutions, and
+                premium products.
               </p>
               <p className="mt-4 text-sm">
-              Delivering high-quality construction services and supplying top-tier materials from trusted manufacturers.
+                Delivering high-quality construction services and supplying
+                top-tier materials from trusted manufacturers.
               </p>
             </div>
           </div>
 
           {/* Contact Section */}
-          <div className="space-y-4 text-sm md:mt-20">
-            <p className="text-base font-bold tracking-wide text-white">Contacts</p>
+          <div className="space-y-4 text-sm md:mt-10">
+            <p className="text-base font-bold tracking-wide text-white">
+              Contacts
+            </p>
             <div className="flex items-center space-x-3">
               <FaPhoneAlt className="text-white" />
               <a
@@ -72,8 +86,10 @@ const Footer = () => {
           </div>
 
           {/* Social Media Section */}
-          <div className="md:mt-20">
-            <p className="text-base font-bold tracking-wide text-white">Social</p>
+          <div className="md:mt-10">
+            <p className="text-base font-bold tracking-wide text-white">
+              Social
+            </p>
             <div className="flex items-center mt-2 space-x-3">
               <a
                 href="/"

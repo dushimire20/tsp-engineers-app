@@ -40,7 +40,7 @@ const ProductGrid = ({ products }: { products: Product[] }) => {
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-full"
+              className="w-full h-full rounded-lg object-cover"
             />
           </div>
 
