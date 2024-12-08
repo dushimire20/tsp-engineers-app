@@ -33,7 +33,7 @@ export const products = [
     path: "/service/grayWaterTreatment"
   },
   {
-    name: "Recycling and WasteWater Treatment",
+    name: " WasteWater Treatment",
     description:
       "Contaminated water originating from domestic and industrial use is called wastewater. Since the content of wastewater in domestic use is in a harmonious balance in terms of carbon, nitrogen and phosphorus, we can make the treated wastewater usable for garden and recreational area irrigation by applying physical and biological wastewater treatment systems and subsequent filtration and disinfection systems.",
     image: P4,
