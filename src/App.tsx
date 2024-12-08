@@ -3,19 +3,16 @@ import Home from '@/pages/home';
 import Layout from '@/components/Layout';
 import AboutUs from '@/pages/about';
 import ContactUs from '@/pages/contact';
-import Solars from './pages/services/solar';
-import SolarPanels from './pages/services/solar/solarPanels';
-import WaterHeaters from './pages/services/solar/waterHeaters';
-import SolarPumps from './pages/services/solar/solarPumps';
+import WaterTreatment from './pages/services/waterTreatment';
 import Catalogue from './pages/catalogue';
 import Document from './pages/document';
 import Gallery from './pages/gallery';
-import DPS from './pages/services/solar/dps';
-import SolarAccessories from './pages/services/solar/solarAccessories';
-import EnergySystems from './pages/services/solar/energySystems';
-import Inverters from './pages/services/solar/inverters';
-import Pools from './pages/services/pools';
 import Partners from './pages/partners';
+import WaterDisalination from './pages/services/waterDisalination';
+import GrayWaterTreatment from './pages/services/greyWaterTreatment';
+import WaterRecycling from './pages/services/waterRecycling';
+import SurfaceWaterTreatment from './pages/services/surfaceWatertreatment';
+import SpringWaterTreatment from './pages/services/springWaterTreatment';
 
 
 const App: React.FC = () => {
@@ -31,16 +28,13 @@ const App: React.FC = () => {
           <Route path="/document" element={<Document/>} />
           <Route path="/gallery" element = {<Gallery/>} />
           <Route path="/partners" element={<Partners/>} />
-          <Route path="/service/solar" element={<Solars/>} />
-          <Route path="/solarPanels" element={<SolarPanels />} />
-          <Route path="/waterHeaters" element={<WaterHeaters />} />
-          <Route path="/solarControls" element={<SolarPumps />} />
-          <Route path="/inverters" element={<Inverters />} />
-          <Route path="/digitalSolutions" element={<DPS/>} />
-          <Route path="/solarAccessories" element={<SolarAccessories/>} />
-          <Route path="/energySystems" element={<EnergySystems/>} />
-          {/* swimming pool services */}
-          <Route path="/service/swimmingPool" element= {<Pools/>} />
+          <Route path="/service/seaWaterTreatment" element={<WaterTreatment/>} />
+          <Route path="/service/waterDesalination" element={<WaterDisalination/>} />
+          <Route path="/service/grayWaterTreatment" element={<GrayWaterTreatment/>} />
+          <Route path="service/waterRecycling" element={<WaterRecycling/>} />
+          <Route path="/service/surfaceWaterTreatment" element={<SurfaceWaterTreatment/>} />
+          <Route path="/service/springWaterTreatment" element={<SpringWaterTreatment/>} />
+         
           
         </Route>
       </Routes>
