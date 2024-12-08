@@ -53,13 +53,13 @@ export const products = [
     image: P6,
     path: "/service/springWaterTreatment"
   },
-  {
-    name: "Rainwater Treatment",
-    description:
-      "In our world where clean water resources are decreasing, we can filter the rainwater collected from the roofs of domestic and industrial facilities and make it suitable for use in recreational areas, gardens or agricultural irrigation or reservoirs. If preferred, we can purify rainwater using different advanced purification technologies to make it drinking and utility water.",
-    image: P7,
-    path: "/service/rainwaterTreatment"
-  },
+  // {
+  //   name: "Rainwater Treatment",
+  //   description:
+  //     "In our world where clean water resources are decreasing, we can filter the rainwater collected from the roofs of domestic and industrial facilities and make it suitable for use in recreational areas, gardens or agricultural irrigation or reservoirs. If preferred, we can purify rainwater using different advanced purification technologies to make it drinking and utility water.",
+  //   image: P7,
+  //   path: "/service/rainwaterTreatment"
+  // },
 
 
 ]
@@ -70,7 +70,7 @@ export const menuData = [
   { name: "Home", path: "/" },
   {
     name: "Product & Solutions",
-    path: "/service/solar",
+    path: "/service/seaWaterTreatment",
     disabled: true,
     dropdown: [
       { name: "Well Water Treatment", path: "/service/seaWaterTreatment" },
@@ -79,8 +79,8 @@ export const menuData = [
       { name: "Recycling and Waste water Treatment", path: "/service/waterRecycling" },
       { name: "Surface water Treatment", path: "/service/surfaceWaterTreatment" },
       { name: "Spring water Treatment", path: "/service/springWaterTreatment" },
-      { name: "Rain water Treatment Solutions", path: "/service/rainwaterTreatment" },
-      { name: "Portable Purification", path: "/service/portablePurification" },
+      // { name: "Rain water Treatment Solutions", path: "/service/rainwaterTreatment" },
+      // { name: "Portable Purification", path: "/service/portablePurification" },
     ],
   },
   {
