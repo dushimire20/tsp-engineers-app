@@ -9,7 +9,7 @@ import {
   FaTwitter,
   FaTelegram,
 } from "react-icons/fa";
-import TSP from "@/assets/400JpgdpiLogo.png";
+import TSP from "@/assets/footerLogo.png";
 import { FaFacebook } from "react-icons/fa6";
 
 const ContactUs: React.FC = () => {

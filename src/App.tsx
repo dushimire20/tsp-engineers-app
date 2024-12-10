@@ -13,6 +13,7 @@ import GrayWaterTreatment from './pages/services/greyWaterTreatment';
 import WaterRecycling from './pages/services/waterRecycling';
 import SurfaceWaterTreatment from './pages/services/surfaceWatertreatment';
 import SpringWaterTreatment from './pages/services/springWaterTreatment';
+import RainWaterTreatment from './pages/services/rainWaterTreatment';
 
 
 const App: React.FC = () => {
@@ -34,6 +35,7 @@ const App: React.FC = () => {
           <Route path="service/waterRecycling" element={<WaterRecycling/>} />
           <Route path="/service/surfaceWaterTreatment" element={<SurfaceWaterTreatment/>} />
           <Route path="/service/springWaterTreatment" element={<SpringWaterTreatment/>} />
+          <Route path="/service/rainWaterTreatment" element={<RainWaterTreatment/>} />
          
           
         </Route>

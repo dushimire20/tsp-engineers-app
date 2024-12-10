@@ -18,12 +18,20 @@ const Home = () => {
 
   const statsVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, staggerChildren: 0.3 } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, staggerChildren: 0.3 },
+    },
   };
 
   const gridVariants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, staggerChildren: 0.2 } },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.5, staggerChildren: 0.2 },
+    },
   };
 
   return (
@@ -73,6 +81,14 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Projects Section */}
+      <section className="py-24 bg-sky-800">
+        <h2 className="text-white text-5xl font-bold text-center mb-7">
+          Our Products & Solutions
+        </h2>
+        <ProjectGrid products={products} />
+      </section>
+
       {/* About Section */}
       <motion.section
         className="py-32 md:mt-16 relative"
@@ -103,8 +119,9 @@ const Home = () => {
                 <p className="text-gray-500 text-base leading-relaxed">
                   Every project we've undertaken has been a collaborative
                   effort, where every person involved has left their mark.
-                  Together, we've not only constructed efficient systems but also built enduring partnerships that define our
-                  success story.
+                  Together, we've not only constructed efficient systems but
+                  also built enduring partnerships that define our success
+                  story.
                 </p>
               </div>
               <div className="flex gap-10">
@@ -129,19 +146,8 @@ const Home = () => {
         </div>
       </motion.section>
 
-      {/* Projects Section */}
-      <section
-       className="py-24 bg-sky-800"
-        
-      >
-        <h2 className="text-white text-5xl font-bold text-center mb-7">
-          Our Products & Solutions
-        </h2>
-        <ProjectGrid products={products} />
-      </section>
-
       {/* Team Section */}
-      <motion.section
+      {/* <motion.section
         className="py-16"
         initial="hidden"
         whileInView="visible"
@@ -178,13 +184,9 @@ const Home = () => {
                 </div>
             </div>
         </div>
-      </motion.section>
+      </motion.section> */}
     </section>
   );
 };
 
 export default Home;
-
-
-
-
