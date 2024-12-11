@@ -171,8 +171,8 @@ const Home = () => {
                     <p className="text-lg text-gray-500 mb-16 text-center lg:text-left">
                     At TSP Engineering LTD, we transform visionary ideas into reality through cutting-edge projects tailored to inspire innovation and deliver impact. From concept to completion, our solutions empower businesses and individuals to excel in an ever-evolving world.
                     </p>
-                    <button className="cursor-pointer py-3 px-8 w-60 bg-sky-800 text-white text-base font-semibold transition-all duration-500 block text-center rounded-full hover:bg-indigo-700 mx-auto lg:mx-0">Join
-                        our team</button>
+                    {/* <button className="cursor-pointer py-3 px-8 w-60 bg-sky-800 text-white text-base font-semibold transition-all duration-500 block text-center rounded-full hover:bg-indigo-700 mx-auto lg:mx-0">Join
+                        our team</button> */}
                 </div>
                 <div className="w-full lg:w-1/2 lg:mt-0 md:mt-40 mt-16 max-lg:max-w-2xl">
                     <div className="grid grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 gap-8">
