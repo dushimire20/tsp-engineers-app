@@ -5,7 +5,13 @@ import HomeVideo from "@/assets/HomeVideo.mp4";
 import { products } from "@/data/index";
 import M1 from "@/assets/gallery/Nzove İçme Suyu Arıtma Projesi.jpg";
 import M2 from "@/assets/gallery/Gihira I Rwanda İçme Suyu Arıtma Tesisi (Rehabilitasyon).jpg";
-import Team from "@/assets/Pteam.png";
+import p1 from "@/assets/project1.jpg"
+import project2 from "@/assets/project2.jpg"
+import project3 from "@/assets/project3.jpg"
+import project4 from "@/assets/project4.jpg"
+import project5 from "@/assets/project5.jpg"
+import project6 from "@/assets/project6.jpg"
+
 
 import ProjectGrid from "@/components/ProjectGrid";
 
@@ -81,13 +87,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Projects Section */}
-      <section className="py-24 bg-sky-800">
-        <h2 className="text-white text-5xl font-bold text-center mb-7">
-          Our Products & Solutions
-        </h2>
-        <ProjectGrid products={products} />
-      </section>
+      
 
       {/* About Section */}
       <motion.section
@@ -146,8 +146,16 @@ const Home = () => {
         </div>
       </motion.section>
 
+      {/* Services Section */}
+      <section className="py-24 bg-sky-800">
+        <h2 className="text-white text-5xl font-bold text-center mb-7">
+          Our Products & Solutions
+        </h2>
+        <ProjectGrid products={products} />
+      </section>
+
       {/* Team Section */}
-      {/* <motion.section
+      <motion.section
         className="py-16"
         initial="hidden"
         whileInView="visible"
@@ -159,32 +167,33 @@ const Home = () => {
                 <div className="w-full lg:w-1/2">
                     <h2
                         className="font-manrope text-5xl text-sky-800 font-bold leading-[4rem] mb-7 text-center lg:text-left">
-                        Our leading, strong & creative team</h2>
-                    <p className="text-lg text-gray-500 mb-16 text-center lg:text-left">These people work on making our
-                        product best.</p>
+                        Innovative Projects Driving Tomorrow</h2>
+                    <p className="text-lg text-gray-500 mb-16 text-center lg:text-left">
+                    At TSP Engineering LTD, we transform visionary ideas into reality through cutting-edge projects tailored to inspire innovation and deliver impact. From concept to completion, our solutions empower businesses and individuals to excel in an ever-evolving world.
+                    </p>
                     <button className="cursor-pointer py-3 px-8 w-60 bg-sky-800 text-white text-base font-semibold transition-all duration-500 block text-center rounded-full hover:bg-indigo-700 mx-auto lg:mx-0">Join
                         our team</button>
                 </div>
                 <div className="w-full lg:w-1/2 lg:mt-0 md:mt-40 mt-16 max-lg:max-w-2xl">
                     <div className="grid grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 gap-8">
-                        <img src={Team} alt="Team tailwind section"
+                        <img src={p1} alt="Team tailwind section"
                             className=" w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0" />
-                        <img src={Team} alt="Team tailwind section"
+                        <img src={project3} alt="Team tailwind section"
                             className="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mx-auto" />
-                        <img src={Team} alt="Team tailwind section"
+                        <img src={project2} alt="Team tailwind section"
                             className="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0 md:ml-0" />
-                        <img src={Team} alt="Team tailwind section"
+                        <img src={project4} alt="Team tailwind section"
                             className="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0 md:ml-auto" />
-                        <img src={Team} alt="Team tailwind section"
+                        <img src={project5} alt="Team tailwind section"
                             className="w-44 h-56 rounded-2xl object-cover md:-mt-20 mx-auto min-[450px]:mr-0 md:mx-auto" />
-                        <img src={Team} alt="Team tailwind section"
+                        <img src={project6} alt="Team tailwind section"
                             className="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0" />
 
                     </div>
                 </div>
             </div>
         </div>
-      </motion.section> */}
+      </motion.section>
     </section>
   );
 };
